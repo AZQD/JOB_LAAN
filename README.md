@@ -51,3 +51,5 @@ http://www.kalichimall.com:81/mobile/index.html
 http://www.kalichimall.com/WEB/index.html
 
 http://www.kalichimall.com/mobile/index.html
+
+账号密码详见百度云；
