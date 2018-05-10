@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位替换固定定位</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <style type="text/css">
+        *{padding: 0;margin: 0;}
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .wrap{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .content_box{
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+        .content{
+            height: 2000px;
+            background-color: #3388FF;
+        }
+        .fixed_box{
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: #fff;
+            color: #000;
+            font-size: 24px;
+        }
+        /*这里就是多套一个层,最外层作为模拟固定定位元素的定位基准层,其和真正的内容层是兄弟元素,相当于在原有的内容层外套上了这样的一个结构,实现绝对定位模拟固定定位*/
+        /*这种结构有点类似曾经写过的轮播图结构,思路都差不多,很好理解,可以用来解决ios对固定定位支持不好的情况,但是还需要结合具体情况进行优化*/
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="content_box">
+        <div class="content">原本内容</div>
+    </div>
+    <div class="fixed_box">
+        固定定位
+    </div>
+</div>
+</body>
+</html>

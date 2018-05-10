@@ -1,0 +1,221 @@
+@rem: 102.4rem;
+
+body{
+    font-family: '微软雅黑';
+}
+.container{
+    min-height: 100vh;
+    width: 1024/@rem;
+    background: url("../image/bodyBg.png") no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 102/@rem;
+    overflow-x: hidden;
+
+    .partA{
+        //overflow: hidden;
+        height: 322/@rem;
+        width: 100%;
+        position: relative;
+        .partAImg1{
+            position: absolute;
+            width: 1014/@rem;
+            left:18/@rem;
+            top: 0;
+        }
+        .partAImg2{
+            position: absolute;
+            z-index: 1;
+            width: 720/@rem;
+            height:340/@rem;
+            left:200/@rem;
+            top: 54/@rem;
+        }
+    }
+
+    .partB{
+        height: 162/@rem;
+        width: 100%;
+        position: relative;
+        .partBImg1{
+            position: absolute;
+            width: 100%;
+            left:0/@rem;
+            top: 8/@rem;
+            padding: 0 6/@rem;
+        }
+        .partBImg2{
+            position: absolute;
+            z-index: 1;
+            width: 681/@rem;
+            height:85/@rem;
+            left: 194/@rem;
+            bottom: 28/@rem;
+        }
+    }
+
+    .partC{
+        //height: 1000px;
+        position: relative;
+        z-index: 2;
+        background: url("../image/partCBg.png") no-repeat 0 0;
+        background-size: 100% 100%;
+        margin: 0 7/@rem;
+
+        .boxVS{
+            text-align: center;
+            //height: 606/@rem;
+            width: 100%;
+            position: relative;
+            padding-bottom: 56/@rem;
+
+            .gifBox{
+                background-color: yellow;
+                padding: 50/@rem 80/@rem;
+                .gifImg{
+                    width: 100%;
+                    background-color: red;
+                }
+            }
+
+
+            .userName{
+                font-size: 42/@rem;
+                font-weight: bold;
+                color: #fff;
+                padding: 0 28/@rem;
+
+                /*新增*/
+                width: 100%;
+                top: 535/@rem;
+                opacity: .9;
+
+                .userNameBg{
+                    text-shadow: 5/@rem 5/@rem 50/@rem #000;
+                    background: url("../image/userNameBg.png") no-repeat;
+                    background-size: 100% 64/@rem;
+                }
+                .helper{
+                    display: none;
+                }
+            }
+            .hasHelper{
+                .leftBox{
+                    position: relative;
+                    top: -32/@rem;
+                    .helper{
+                        display: block;
+                        position: absolute;
+                        top: 62/@rem;
+                    }
+                }
+            }
+
+            .vs{
+                position: absolute;
+                left: 394/@rem;
+                bottom: 0;
+                width: 247/@rem;
+                z-index: 6;
+            }
+        }
+        
+        .downloadWarp{
+            position: relative;
+            padding: 32/@rem 28/@rem 76/@rem 28/@rem;
+            margin: 0 66/@rem;
+            .part{
+                text-align: center;
+                .btnBox{
+                    .btn{
+                        width: 334/@rem;
+                        height: 152/@rem;
+                        line-height: 100/@rem;
+                        text-align: center;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        font-size: 60/@rem;
+                        text-shadow: 0 0 16/@rem #000;
+                        padding-bottom: 10/@rem;
+                    }
+                    .leftBtn{
+                        background: url("../image/leftBtn.png") no-repeat;
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+
+        .dangAnBox{
+            width: 887/@rem;
+            height:428/@rem;
+            background: url("../image/share_dangAnBg.png") no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            margin-bottom: 76/@rem;
+            position: relative;
+            .gamerImg{
+                height: 428/@rem;
+                position: absolute;
+                left: 36/@rem;
+                padding-top: 46/@rem;
+            }
+            .title{
+                height:73/@rem;
+                text-align: center;
+                padding-top: 6/@rem;
+                img{
+                    width: 287/@rem;
+                }
+            }
+            .info{
+                color: #fff;
+                font-size: 42/@rem;
+                padding-left: 392/@rem;
+                .name{
+                    padding: 40/@rem 0;
+                }
+            }
+        }
+
+        .explainBox{
+            padding-bottom: 182/@rem;
+            margin: 0 28/@rem;
+            position: relative;
+            top: -20/@rem;
+            .divide{
+                img{
+                    width: 100%;
+                }
+            }
+            .explain{
+                padding: 10/@rem 56/@rem;
+                color: #4b3636;
+                font-size: 42/@rem;
+            }
+        }
+
+        .bottomImg{
+            position: absolute;
+            left: 0;
+            bottom:0;
+            z-index: 10;
+            width: 100%;
+            background-color: #55403D;
+        }
+    }
+
+    .downTipBox {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 99999999999999;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: 0.9;
+        .tipImg{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.jcarousel-skin-tango .jcarousel-container { margin: 0 auto;}
+.jcarousel-skin-tango .jcarousel-container-horizontal {width: 910px;}
+.jcarousel-skin-tango .jcarousel-clip { overflow: hidden;}
+.jcarousel-skin-tango .jcarousel-clip-horizontal { width: 910px;}
+.jcarousel-skin-tango .jcarousel-item { width: 150px; height: 150px;}
+.jcarousel-skin-tango .jcarousel-item-horizontal { margin-left: 0; margin-right: 40px;}
+.jcarousel-skin-tango .jcarousel-item-placeholder { background: #fff; color: #000;} 
+.jcarousel-skin-tango .jcarousel-prev, .jcarousel-skin-tango .jcarousel-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -24px;
+	display: block;
+	width: 48px;
+	height: 48px;
+	background-image: url(arrow_pic.png);
+	background-repeat: no-repeat;
+}
+.jcarousel-skin-tango .jcarousel-next.jcarousel-next-horizontal { right:-70px; background-position:-50px 0; }
+.jcarousel-skin-tango .jcarousel-next.jcarousel-next-horizontal:hover{ background-position:-150px 0;}
+.jcarousel-skin-tango .jcarousel-prev.jcarousel-prev-horizontal { left:-70px; background-position:0 0; }
+.jcarousel-skin-tango .jcarousel-prev.jcarousel-prev-horizontal:hover {  background-position:-100px 0; }
+
+.jcarousel-skin-480 .jcarousel-container { margin: 0 auto;}
+.jcarousel-skin-480 .jcarousel-container-horizontal {width: 1076px;}
+.jcarousel-skin-480 .jcarousel-clip { overflow: hidden;}
+.jcarousel-skin-480 .jcarousel-clip-horizontal { width: 1076px;}
+.jcarousel-skin-480 .jcarousel-item { min-width: 310px; height: 404px; border: solid 1px #eee;}
+.jcarousel-skin-480 .jcarousel-item-horizontal { margin-left: 0; margin-right: 70px;}
+.jcarousel-skin-480 .jcarousel-item-placeholder { background: #fff; color: #000;} 
+.jcarousel-skin-480 .jcarousel-prev, .jcarousel-skin-480 .jcarousel-next {cursor:pointer; background: url(arrow_pic.png) no-repeat;position:absolute;top: 50%;margin-top: -24px;display:block;width:48px;height:48px;}
+.jcarousel-skin-480 .jcarousel-next.jcarousel-next-horizontal { right:-50px; background-position:-50px 0; }
+.jcarousel-skin-480 .jcarousel-next.jcarousel-next-horizontal:hover{ background-position:-150px 0;}
+.jcarousel-skin-480 .jcarousel-prev.jcarousel-prev-horizontal { left:-50px; background-position:0 0; }
+.jcarousel-skin-480 .jcarousel-prev.jcarousel-prev-horizontal:hover {  background-position:-100px 0; }
+.jcarousel-skin-480 .jcarousel-item img { max-height: 374px; padding: 15px;}

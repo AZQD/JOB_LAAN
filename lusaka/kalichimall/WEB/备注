@@ -1,0 +1,16 @@
+http://localhost:63342/WEB/searchOrTab：search搜索进入该页面，searchKeyWord关键字
+
+http://localhost:63342/WEB/category.html?searchOrTab=tab&cid=5
+searchOrTab：tab其他页面进入该页面，cid商品分类cid
+
+http://localhost:63342/WEB/detail.html?id=4
+id:具体商品的id
+
+http://localhost:63342/WEB/profile.html?pubUid=14
+pubUid：发布者的uid
+
+http://localhost:63342/WEB/login.html?goLogin=1
+goLogin:登录到上个页面，当无该参数时登录进入首页；
+
+
+web页面title

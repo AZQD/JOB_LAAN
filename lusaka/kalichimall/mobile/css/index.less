@@ -1,0 +1,366 @@
+@rem : 16rem;
+
+body{
+  position: relative;
+  background-color: #EBEBEB;
+}
+
+/*swiper-container*/
+.swiper-container{
+  height: 105/@rem;
+    width: 100%;
+  //margin-top:40/@rem;
+}
+.swiper-container .swiper-wrapper{
+    width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+    width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+  width: 100%;
+  height: 105/@rem;
+}
+
+
+/*messageBox*/
+.messageBox{
+  background-color: #FBFBFB;
+  position: relative;
+  overflow: hidden;
+  padding: 5/@rem 0;
+  //border-top:4/@rem solid #E9E9E9;
+  border-top:4/@rem solid #E9E9E9;
+}
+.messageBox .msgTip{
+  position: absolute;
+  left: 0;
+  top: 8/@rem;
+  border-right: 1px solid #999;
+  padding-top: 2/@rem;
+  padding-right:12/@rem;
+}
+.messageBox .msgTip .msgImg{
+  padding: 0 5/@rem;
+  width: 36/@rem;
+}
+.messageBox .msgTip .msgNum{
+  position: absolute;
+  display: inline-block;
+  right: 7/@rem;
+  top: -5/@rem;
+  width: 15/@rem;
+  height: 15/@rem;
+  //line-height:15/@rem;
+  text-align: center;
+  //background-color: #FF4720;
+  //border-radius: 15/@rem;
+  background: url("../image/index/roundBg.png") no-repeat center;
+  background-size: 100% 100%;
+  font-size: 12/@rem;
+}
+.messageBox .msgTip .msgNum .msgNumText{
+  position: relative;
+  height: 100%;
+  top: -0.0625rem;
+}
+.messageBox .msgTip .msgNum .msgNumTextOpera{
+  position: relative;
+  height: 100%;
+  top: -0.215rem;
+}
+
+.messageBox #msgBox{
+  overflow: hidden;
+  height: 30/@rem;
+  //border-left: 1px solid #999;
+  margin-left: 48/@rem;
+  text-align: justify;
+  padding: 0 8/@rem;
+}
+.messageBox .adList li{
+  height: 30/@rem;
+  line-height:15/@rem;
+  color: #333333;
+  font-size: 13/@rem;
+}
+.messageBox .adList .totalMsg, .messageBox .adList .checkMsg{
+  font-size: 14/@rem;
+  font-weight: bold;
+  padding-top: 8/@rem;
+}
+.messageBox .adList #totalUsers, .messageBox .adList #totalProduct, .messageBox .adList #checkPoint{
+  font-size: 16/@rem;
+  color: #FF4720;
+}
+
+
+/*bestGoods*/
+.bestGoods{
+  //height: 150/@rem;
+  padding-top: 6/@rem;
+  padding-bottom: 10/@rem;
+  background-color: #E9E9E9;
+}
+.bestGoods .bestGoodsTitle{
+  height: 22/@rem;
+  position: relative;
+  margin-bottom:10/@rem;
+  border-bottom:1px solid #333;
+}
+.bestGoods .bestGoodsTitle span{
+  position: absolute;
+  left: 0;
+  top: 1/@rem;
+  font-size: 18/@rem;
+  font-weight: bold;
+  border-bottom: 2/@rem solid #FF4720;
+}
+.bestGoods .imgsBox{
+  cursor: pointer;
+  position: relative;
+  /*width: 236/@rem;*/
+  min-height: 78/@rem;
+  width: 100%;
+}
+.bestGoods .imgsBox .imgBox{
+  width: 23%;
+  height: 75/@rem;
+  margin:0 1%;
+  padding: 0 8/@rem;
+}
+.bestGoods .imgsBox .imgBox img{
+  width: 100%;
+}
+
+/*recentOrNear*/
+.recentOrNear{
+  padding-bottom: 10/@rem;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.recentOrNear .title{
+  //height: 35/@rem;
+  //line-height: 35/@rem;
+  font-size: 13/@rem;
+  color: #333333;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 2/@rem solid #FF4720;
+}
+.recentOrNear .active{
+  color: #fff;
+  background-color: #FF4720;
+}
+.recentOrNear .getList{
+  background-color: #E9E9E9;
+  //padding: 0 10/@rem;
+}
+.recentOrNear .getList .getLi{
+  margin-top: 10/@rem;
+  padding: 0 8/@rem;
+  width: 31.3%;
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+  height: 116/@rem;
+}
+.recentOrNear .getList .getLi img{
+  width: 100%;
+  height: 78/@rem;
+  border: 1px solid #FF4720;
+}
+.recentOrNear .getList .getLi .price{
+  position: absolute;
+  left:0;
+  bottom: -2/@rem;
+  height: 20/@rem;
+  line-height:20/@rem;
+  width: 100%;
+  //padding: 0 8/@rem;
+  text-align: right;
+  color: #fff;
+}
+.recentOrNear .getList .getLi .price span{
+  display: inline-block;
+  width: 100%;
+  font-size: 12/@rem;
+  padding-right: 5/@rem;
+  background-color: #FF4720;
+}
+
+/*contactBox*/
+.contactBox{
+  line-height: 28/@rem;
+  margin-bottom: 50/@rem;
+  text-align: center;
+  padding: 8/@rem 0;
+  font-size: 16/@rem;
+  color: #333;
+  border-bottom: 1px dotted #FF4720;
+}
+.contactBox a{
+  color: #333;
+  text-decoration: underline;
+}
+
+
+.container{
+  transform: none;
+}
+
+
+/*infos*/
+.infos{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom:0;
+  z-index: 999;
+  box-shadow: 0 0 20/@rem #333;
+}
+.infos .part{
+  //height: 40/@rem;
+  //line-height: 40/@rem;
+  font-size: 14/@rem;
+  color: #fff;
+  text-align: center;
+  background-color: #FF4720;
+  padding: 10/@rem 0;
+  font-weight: bold;
+  //border-top: 6/@rem solid #FF4720;
+  //border-bottom: 6/@rem solid #FF4720;
+}
+.infos .indexPublish{
+  //border-right: 1px solid #fff;
+  background: #FF4720 url("../image/index/borderWhite.png") no-repeat right top;
+  background-size: 1px 100%;
+}
+.infos .part span{
+  text-decoration: underline;
+}
+
+
+
+/*classifyBox*/
+/*
+.classifyBox{
+  //margin-top:40/@rem;
+  //display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 40/@rem;
+  background-color: #fff;
+}
+.classifyBox .eachClass{
+  font-size: 0.875rem;
+  color: #666;
+  //height: 2rem;
+  line-height: 2rem;
+  border-top: 1px solid #999999;
+}
+.classifyBox .eachClass .eachClassName{
+  padding-left: 0.625rem;
+  text-decoration: underline;
+}*/
+
+
+.classifyBoxWrap {
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  box-shadow: 0 0.125rem 0.375rem #999999;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 2/@rem 6/@rem #999;
+}
+.classifyBox{
+  //position: fixed;
+  //z-index: 9999;
+  //top: 40/@rem;
+  //margin-bottom:126/@rem;
+  background-color: #fff;
+  position: relative;
+  left:5/@rem;
+
+}
+.classifyBox .classifyLi{
+  //padding: 0 20/@rem;
+}
+
+.classifyBox .classifyLi .firstName{
+  text-align: right;
+  padding-right: 15/@rem;
+  height: 32/@rem;
+  line-height: 32/@rem;
+  font-size: 14/@rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.classifyBox .classifyLi .secondNames{
+  padding-left: 18/@rem;
+  font-size: 14/@rem;
+  color: #666;
+  //min-height: 32/@rem;
+  line-height: 32/@rem;
+  border-left: 1px solid #999;
+}
+.classifyBox .classifyLi .secondNames .secondName{
+  height: 32/@rem;
+  line-height: 32/@rem;
+  padding-right: 10/@rem;
+  text-decoration: underline;
+}
+
+/*showPointBox*/
+.showPointBox{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.showPointBox .showPoint{
+  width: 100%;
+  height: 270/@rem;
+  margin-top: 9.375rem;
+  background: url("../image/index/jiFen.png") no-repeat center;
+  background-size: 100%;
+  text-align: center;
+  position: relative;
+}
+.showPointBox .showPoint .title{
+  font-size: 28/@rem;
+  color: #1E1E1E;
+  padding-top:66/@rem;
+}
+.showPointBox .showPoint .desc1{
+  font-size: 16/@rem;
+  color: #CCCCCC;
+  padding-top: 32/@rem;
+}
+.showPointBox .showPoint .desc2{
+  font-size: 16/@rem;
+  color: #CCCCCC;
+  text-decoration: underline;
+}
+.showPointBox .showPoint .ok{
+  display: inline-block;
+  width: 64/@rem;
+  height: 20/@rem;
+  line-height:10/@rem;
+  border-radius: 20/@rem;
+  font-size: 16/@rem;
+  color: #CCCCCC;
+  outline: none;
+  border: 1px solid #CCCCCC;
+  background: #FB293C;
+  margin-top: 24/@rem;
+}
+.showPointBox .showPoint .close{
+  position: absolute;
+  top:0;
+  right: 90/@rem;
+  width: 25/@rem;
+  background-color: #fff;
+}

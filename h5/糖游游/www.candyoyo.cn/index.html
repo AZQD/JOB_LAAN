@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xmlns:fb="http://ogp.me/ns/fb#" xmlns:addthis="http://www.addthis.com/help/api-spec" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge;">
+<meta charset="utf-8">
+<title>糖游游</title>
+<meta name="keywords" content="game,children,kids,appstore,mobile games,ios game,android game,amazon game,free game,publish game,tabtale,6677g,4399">
+<meta name="description" content="We Develop publish Mobile Games For Children.">
+
+<script type="text/javascript" src="images/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="images/main.css" type="text/css">
+<script type="text/javascript" src="images/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="images/skin.css">
+</head>
+<body><div id="qrcode"></div>
+
+<div id="menu_area">
+	<div class="page">
+		<div id="menu">
+			<ul id="main-menu" class="menu rmm-main-list" style="position:absolute">
+				<li class="menu_logo tab" style="margin-top:2px!important"><a href="#">LOGO</a></li>
+				<li class="tab tab-1 current"><a href="index.html" title="首页">首页</a></li>
+				<li class="tab tab-2 "><a href="gzzb/index.html" target="_blank">公主装扮</a></li>
+				<li class="tab tab-6 "><a href="list.html" >游戏联运</a></li>
+                <li class="tab tab-2 "><a href="login.asp" >会员中心</a></li>
+                <li class="tab tab-3 "><a href="pay.html" >游戏充值</a></li>
+				<li class="tab tab-7 "><a href="contact.html" title="联系方式">联系方式</a></li>	
+                <li class="tab tab-7 "><a href="parentmanage.html" >家长防护</a></li>				
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script language="javascript">
+var tp_current = 0;
+var tp_pre = 0;
+$(document).ready(function(){
+	$(".tp-bgimg").each(function(){
+		var apple = $(this).attr("data-apple");
+		var google = $(this).attr("data-google");
+		var amazon = $(this).attr("data-amazon");
+		
+		var html = "";
+		if (amazon) html +="<a target='blank' class='banner_market ani_market_cont amazon' href='"+amazon+"'></a>";
+		if (google) html +="<a target='blank' class='banner_market ani_market_cont google' href='"+google+"'></a>";
+		if (apple) html +="<a target='blank' class='banner_market ani_market_cont apple' href='"+apple+"'></a>";
+		$(this).prepend("<div class='market_area'><div class='cont'>"+html+"</div></div>")
+	});
+	
+	var iya_banner_cnt = $(".tp-bgimg").length;
+	
+	//$(".tp-bgimg").first().show();
+	$("#home_slider").append("<div class='tp-arrow leftarrow'></div><div class='tp-arrow rightarrow'></div>");
+	$(".tp-arrow.rightarrow").click(function(){
+		tp_current=(++tp_current)%iya_banner_cnt;
+		$(".tp-bgimg").fadeOut("slow");
+		$(".tp-bgimg").eq(tp_current).fadeIn("slow");
+		return false;
+	});
+	
+	$(".tp-arrow.leftarrow").click(function(){
+		tp_current=(--tp_current)%iya_banner_cnt;
+		$(".tp-bgimg").fadeOut("slow");
+		$(".tp-bgimg").eq(tp_current).fadeIn("slow");
+		return false;
+	});
+	
+	ajaxdl();
+	window.setInterval(function(){ajaxdl();}, 1800);
+});
+
+function ajaxdl()
+{
+	$.ajax({
+		type: "post",
+		url: "ajaxdl.php",
+		data: "name=john",
+		success: function(msg){
+			$("#earth").html(msg);
+		}
+	});
+}
+</script>
+
+<div id="home_slider" class="user-select" style="height:500px;width:100%;position:relative;">
+	<div class="tp-loader spinner0" style="display: none;"></div>
+		<div class="tp-bgimg defaultimg" data-apple="" data-google="https://play.google.com/store/apps/details?id=air.com.candyoyo.CuteGirlsPoolParty" data-amazon="http://www.amazon.com/dp/B016KNTIAS/ref=cm_sw_su_dp" style="display: block; background-image: url(images/201510140959380624_bg.png);"><div class="market_area"><div class="cont"><a target="blank" class="banner_market ani_market_cont amazon" href="http://www.amazon.com/dp/B016KNTIAS/ref=cm_sw_su_dp"></a><a target="blank" class="banner_market ani_market_cont google" href="http://android.myapp.com/myapp/detail.htm?apkName=air.com.candyoyo.HelloMyFamilyPoolParty"></a></div></div>
+		 <!--<img src="" class="lazybanner" style="position:absolute;left:0;top:0;width:100%;height:100%"/>-->
+		<img class="lazybanner main_frontimg ani_frontimg" src="images/201510140956521085_renwu.png" alt="" style="height:500px">
+		
+        </div>
+		<div class="tp-bgimg defaultimg" data-apple="" data-google="https://play.google.com/store/apps/details?id=air.com.candyoyo.PuppyParadise" data-amazon="" style="background-image:url(images/201509261057401735_background.png)"><div class="market_area"><div class="cont"><a target="blank" class="banner_market ani_market_cont google" href="https://play.google.com/store/apps/details?id=air.com.candyoyo.PuppyParadise"></a></div></div>
+		 <!--<img src="" class="lazybanner" style="position:absolute;left:0;top:0;width:100%;height:100%"/>-->
+			<img class="lazybanner main_frontimg ani_frontimg" src="images/201509261051019608_狗.png" alt="" style="height: 500px">
+			</div>
+		
+	<div class="tp-arrow leftarrow"></div><div class="tp-arrow rightarrow"></div></div>
+
+<div id="header_area" class="full_width"></div>
+
+<div id="content_area" class="full_width">
+	<div class="page">
+		<div id="counter_container">
+			<b id="earth" class="timer">131,625,784</b>
+			<span class="counter_dl">下载</span>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+#mycarousel li {display: table;text-align: center;} 
+#mycarousel li a {
+	display: table-cell;
+	vertical-align: middle;
+}
+#mycarousel li a img {
+	max-width:150px;
+	max-height:150px;
+}
+</style>
+ 
+<!--
+<div id="home_middle_wrapper">
+	<div class="page user-select" style="width:1069px">
+	  <div class=" jcarousel-skin-tango"><div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;"><div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;"><ul id="mycarousel" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 6180px;">
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" jcarouselindex="1" style="float: left; list-style: none;"><a href="#"><img src="images/201601300953490372_icon_120.png" title="漂亮妈妈脸部护理"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal" jcarouselindex="2" style="float: left; list-style: none;"><a href="#"><img src="images/201512281340188379_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal" jcarouselindex="3" style="float: left; list-style: none;"><a href="#"><img src="images/201510271638356582_icon_120(2).png" title="公主妈妈新生儿"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal" jcarouselindex="4" style="float: left; list-style: none;"><a href="#"><img src="images/201510271519145452_icon_120.png" title="妈咪护理"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-5 jcarousel-item-5-horizontal" jcarouselindex="5" style="float: left; list-style: none;"><a href="#"><img src="images/201510231743235502_icon_120.png" title="照顾美人鱼孕妇"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-6 jcarousel-item-6-horizontal" jcarouselindex="6" style="float: left; list-style: none;"><a href="#"><img src="images/201510201455041156_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-7 jcarousel-item-7-horizontal" jcarouselindex="7" style="float: left; list-style: none;"><a href="#"><img src="images/201510141006287562_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal" jcarouselindex="8" style="float: left; list-style: none;"><a href="#"><img src="images/201509261116353185_icon_120.png" title="狗狗乐园-可爱的狗狗"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal" jcarouselindex="9" style="float: left; list-style: none;"><a href="#"><img src="images/201509141519280567_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-10 jcarousel-item-10-horizontal" jcarouselindex="10" style="float: left; list-style: none;"><a href="#"><img src="images/201508211102391898_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-11 jcarousel-item-11-horizontal" jcarouselindex="11" style="float: left; list-style: none;"><a href="#"><img src="images/201508101138568709_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-12 jcarousel-item-12-horizontal" jcarouselindex="12" style="float: left; list-style: none;"><a href="#"><img src="images/201508031140063936_icon_120.png" title=""></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-13 jcarousel-item-13-horizontal" jcarouselindex="13" style="float: left; list-style: none;"><a href="#"><img src="images/201507231745417442_icon_120.png" title="Hello! 我的家庭游乐场"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-14 jcarousel-item-14-horizontal" jcarouselindex="14" style="float: left; list-style: none;"><a href="#"><img src="images/201507091720464930_icon_120.png" title="Hello! 家庭小巧匠"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-15 jcarousel-item-15-horizontal" jcarouselindex="15" style="float: left; list-style: none;"><a href="#"><img src="images/201506191746109909_icon_120.png" title="Hello！家庭农场"></a></li>
+				<li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-16 jcarousel-item-16-horizontal" jcarouselindex="16" style="float: left; list-style: none;"><a href="#"><img src="images/201506051839259775_icon_120.png" title="Hello！我的家庭早餐"></a></li>
+				
+			  </ul></div><div class="jcarousel-prev jcarousel-prev-horizontal" style="display: block;"></div><div class="jcarousel-next jcarousel-next-horizontal" style="display: block;"></div></div></div>
+	</div>
+
+    -->
+    <!--
+	<div id="counter_bottom_label">
+		<p>畅销的Apps！</p>
+	</div>
+    -->
+    
+  <div class="con">
+    
+    <div class="contact"><h1>联系客服</h1>
+      <p>邮箱：estaff@youkonwan.com        </p>
+      <p>客服电话：0731-89784676        </p>
+      <p>客服qq：36306070</p>
+    </div>
+    <div class="news"><h1>资讯公告</h1>
+    <ul class="news_list"> <li><span class="fr">2016-05-07</span> <a href="#">网络游戏未成年人家长监护工程</a></li>
+                              
+                              <li><span class="fr">2016-02-29</span><a href="#">游戏纠纷处理方式</a> </li>
+                              
+                              <li><span class="fr">2015-10-29</span>  <a href="#">防沉迷系统</a></li>
+                              
+                              <li><span class="fr">2015-09-14</span>  <a href="#">官网上线通知</a>  </li>
+                              
+                              <li><span class="fr">2015-06-28</span> <a href="#">游戏更新通知</a>  </li>
+                           
+					</ul>
+    
+    </div>
+    
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+    	 scroll: 5,
+		 wrap: 'circular'
+    });
+});
+</script>
+
+<script type="text/javascript">
+
+var t_img; // 定时器
+var isLoad = true; // 控制变量
+ 
+// 判断图片加载状况，加载完成后回调
+isImgLoad(function(){
+	$(".spinner0").hide();
+	$(".tp-bgimg").eq(0).show();
+});
+
+// 判断图片加载的函数
+function isImgLoad(callback){
+    // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+    // 查找所有封面图，迭代处理
+    $('.lazybanner').each(function(){
+        // 找到为0就将isLoad设为false，并退出each
+        if(this.height === 0){
+            isLoad = false;
+            return false;
+        }
+    });
+    // 为true，没有发现为0的。加载完毕
+    if(isLoad){
+		clearTimeout(t_img); // 清除定时器
+		// 回调函数
+        callback();
+    // 为false，因为找到了没有加载完成的图，将调用定时器递归
+    }else{
+        isLoad = true;
+        t_img = setTimeout(function(){
+            isImgLoad(callback); // 递归扫描
+        },500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+    }
+}
+
+</script>
+
+<div id="footer_area" class="full_width">
+	<div class="page">
+		<div id="footer" style="margin-left:-73px">
+			<div style="display:inline-block;"><a><img src="images/logo.png" width="106px" height="73px"></a></div>
+			<div style="display:inline-block;margin-left:20px;vertical-align: top;margin-top:10px;">
+				版权所有：长沙糖游游信息科技有限公司 　公司地址：雨花区迎新路御溪国际3栋531　 湘ICP备16010161，湘网文 (2016) 5364-115号
+				<br>
+				<span class="copywright">© <script language="javascript">document.write(new Date().getUTCFullYear());</script> CANDYOYO.COM</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script language="javascript" src="images/lazyload-img_0bb42d1.js"></script>
+
+
+</body></html>

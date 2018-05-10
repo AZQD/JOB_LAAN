@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+</head>
+<body>
+<p>appCodeName: <span id="appCodeName"></span></p>
+<p>appName: <span id="appName"></span></p>
+<p>userAgent: <span id="userAgent"></span></p>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#appCodeName').html(window.navigator.appCodeName);
+        $('#appName').html(window.navigator.appName+','+isOperaMiniLow);
+        $('#userAgent').html(window.navigator.userAgent);
+    });
+    console.log(window.navigator);
+    console.log(window.navigator.userAgent);
+</script>
+</body>
+</html>

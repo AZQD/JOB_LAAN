@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="profileTitle"></title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/headerBox.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<section class="commonPopBox" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="container-fluid">
+
+    <aside class="headerBox">
+        <div class="row header">
+            <div class="col-xs-6 col-sm-6 headerLeft">
+                <span class="lusaka"><!--Lusaka--></span>&nbsp;
+                <span class="change">[Change]</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight1" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="space login">Sign in</span>|
+                <span class="space register">Sign up</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight2" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="headImgBox"><img src="" class="headImg" style="display: none;"><span class="space name"></span>|</span>
+                <span class="space profile">My profile</span>|
+                <span class="space logout">logout</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <ul class="changeUl" style="display: none;">
+                <!--<li class="changeLi"><a href="#" class="changeLiLink">Lusaka1</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka2</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka3</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka4</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka5</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka6</a></li>-->
+            </ul>
+        </div>
+    </aside>
+
+    <aside class="searchBox row">
+        <div class="row search col-xs-12 col-sm-12">
+            <div class="col-xs-6 col-sm-6 searchLeft">
+                <div class="col-xs-3 col-sm-3 part1">
+                    <div class="col-xs-12 col-sm-12 headImg"><img src="" style="display: none;"></div>
+                    <div class="col-xs-12 col-sm-12 name"></div>
+                </div>
+
+                <div class="col-xs-3 col-sm-3 part2">
+                    <a href="#sellingSign" style="display: block; width: 100%;height: 90px;">
+                    <div class="col-xs-12 col-sm-12" style="height:50px;"><span class="number" id="sellingNum"></span></div>
+                    <div class="col-xs-12 col-sm-12"><span class="sort">SELLING</span></div>
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-3 part2 leftSize">
+                    <a href="#likeSign" style="display: block; width: 100%;height: 90px;">
+                        <div class="col-xs-12 col-sm-12" style="height:50px;"><span class="number" id="likeNum"></span></div>
+                        <div class="col-xs-12 col-sm-12"><span class="sort">MY FAVORITE</span></div>
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-3 part2 leftSize">
+                    <!--<a href="#messageSign" style="display: block; width: 100%;height: 90px;">
+                        <div class="col-xs-12 col-sm-12" style="height:50px;"><span class="number" id="messageNum"></span></div>
+                        <div class="col-xs-12 col-sm-12"><span class="sort">MESSAGE</span></div>
+                    </a>-->
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 searchRight" style="position: relative;">
+                <input class="ipt" type="text" placeholder="What dou you need?">
+                <img class="searchImg" src="image/index/search.png">
+                <marquee style="position: absolute;left: 151px;bottom: 12px;width: 377px;height: 20px;line-height: 20px;" id="aboutmarquee"></marquee>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="publishBox">
+        <div class="row publish">
+            <!--<div class="col-xs-12 col-sm-12">
+                <textarea name="name" class="publishText"></textarea>
+            </div>-->
+            <div class="col-xs-12 col-sm-12 publishBtnBox" style="display: none;">
+                <a href="#" class="publishBtn">PUBLISH</a>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="sellingBox">
+        <div class="row selling">
+            <div class="col-xs-12 col-sm-12 sellingTitle">
+                <a class="gang"  name="sellingSign">|</a>&nbsp;<span class="" id="sellingTitle">PUBLISHED(<span class="sellingNum"></span>)</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 sellingList">
+                <!--<a href="#" class="sellingLink">
+                    <img class="goodImg" src="image/information/sellingImg.jpg">
+                    <div class="row desc">
+                        <div class="col-xs-6 col-sm-6 left">iPhone 5s</div>
+                        <div class="col-xs-6 col-sm-6 right">1054</div>
+                    </div>
+                </a>-->
+            </div>
+            <div class="col-xs-12 col-sm-12 more" id="moreSelling" style="display: none;">
+                <a href="#"  class="moreText">MORE</a>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="likeBox">
+        <div class="row like">
+            <div class="col-xs-12 col-sm-12 likeTitle">
+                <a class="gang" name="likeSign">|</a>&nbsp;<span class="" id="likeTitle">MY FAVORITE(<span class="likeNum"></span>)</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 likeList">
+                <!--<a href="#" class="likeLink">
+                    <img class="goodImg" src="image/information/sellingImg.jpg">
+                    <div class="row desc">
+                        <div class="col-xs-6 col-sm-6 left">iPhone 5s</div>
+                        <div class="col-xs-6 col-sm-6 right">1054</div>
+                    </div>
+                </a>-->
+            </div>
+            <div class="col-xs-12 col-sm-12 more" id="moreLike" style="display: none;">
+                <a href="#"  class="moreText">MORE</a>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="messageBox">
+        <div class="row message"><!--messageSign-->
+            <div class="col-xs-12 col-sm-12 messageTitle">
+                <a class="gang" name="messageSign">|</a>&nbsp;<span class="">MESSAGES<!--(<span class="messageNum"></span>)--></span>
+            </div>
+
+            <!--facebook发布评论-->
+            <!--<div class="fb-comments row" id="fackbookNeedId"></div>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id
+
+                        = id;
+                js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v2.8&appId=612348248960723";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>-->
+
+            <div id="disqus_thread"></div>
+            <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://kalichimall.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+    </aside>
+
+
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<!--<script type="text/javascript" src="js/headerBox.js"></script>-->
+<script type="text/javascript" id="headerBoxFun"></script>
+<script type="text/javascript" id="profileFun"></script>
+<script type="text/javascript">
+    $('#headerBoxFun').attr('src', 'js/headerBox.js?v='+mathRandomResult);
+    $('#profileFun').attr('src', 'js/profile.js?v='+mathRandomResult);
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="manageTitle"></title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/headerBox.css">
+    <link rel="stylesheet" href="css/manage.css">
+</head>
+<body>
+<section class="commonPopBox" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="commonPopBox2" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn confirmBtn1">YES</span><span class="confirmBtn confirmBtn2">NO</span>
+        </div>
+    </div>
+</section>
+<section class="managePopBox" style="display: none;">
+    <div class="managePop">
+        <img class="manageCloseBtn" src="image/backManage/closeBtn.png">
+        <div class="fileBtn">
+            <a href="javascript:;" class="upload a-upload a-upload4">Browser...
+                <input type="file" id="upfile4" accept="image/png, image/jpeg" name="file">
+                <span class="showFileName showFileName4"></span>
+            </a>
+        </div>
+        <p class="warning">Support PNG、JPG files.File size should less than 4M.</p>
+        <div class="imgBox">
+            <img class="headImgPic" src=""/>
+            <span class="loadingText" style="display: none;">loading...</span>
+        </div>
+        <div class="recommedTitle">Recommends</div>
+        <div class="recommendBox">
+            <!--<img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />-->
+        </div>
+        <div class="save"><button class="saveBtn">Save</button></div>
+    </div>
+</section>
+<section class="container-fluid">
+
+    <aside class="headerBox">
+        <div class="row header">
+            <div class="col-xs-6 col-sm-6 headerLeft">
+                <span class="lusaka"><!--Lusaka--></span>&nbsp;
+                <span class="change">[Change]</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight1" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="space login">Sign in</span>|
+                <span class="space register">Sign up</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight2" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="headImgBox"><img src="" class="headImg" style="display: none;"><span class="space name"></span>|</span>
+                <span class="space profile">My profile</span>|
+                <span class="space logout">logout</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <ul class="changeUl" style="display: none;">
+                <!--<li class="changeLi"><a href="#" class="changeLiLink">Lusaka1</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka2</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka3</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka4</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka5</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka6</a></li>-->
+            </ul>
+        </div>
+    </aside>
+
+    <aside class="searchBox row">
+        <div class="row search col-xs-12 col-sm-12">
+            <div class="col-xs-6 col-sm-6 searchLeft">
+                <img class="logo" src="image/index/logo.png">
+            </div>
+            <div class="col-xs-6 col-sm-6 searchRight" style="position: relative;">
+                <input class="ipt" type="text" placeholder="What dou you need?">
+                <img class="searchImg" src="image/index/search.png">
+                <button class="searchBtn">PUBLISH</button>
+                <marquee style="position: absolute;left: 50px;bottom: 6px;width: 507px;height: 20px;line-height: 20px;" id="aboutmarquee"></marquee>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="infoBox">
+        <div class="info">
+            <div class="row infoWrap">
+                <div class="col-xs-3 col-sm-3 infoLeft">
+                    <div class="infoLeftTitle"><a href="###" class="active">Profile</a></div>
+                    <div class="infoLeftTitle"><a href="###">Products</a></div>
+                    <!--<div class="infoLeftTitle"><a href="###">Messages</a></div>-->
+                </div>
+                <div class="col-xs-9 col-sm-9 infoRight">
+                    <div class="part part1" style="display: block;">
+                        <div class="headBox">
+                            <img class="headImg" src="" style="display: none;">
+                            <!--<a class="editLink" href="#"></a>-->
+
+                            <!--<a href="javascript:;" class="a-upload a-upload4">Edit
+                                <input type="file" id="upfile4" accept="image/png, image/jpeg" name="file">
+                                <span class="showFileName showFileName4"></span>
+                            </a>-->
+                            <div class="goToEdit"><a href="###">Edit</a></div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr">Cellphone:&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="value"></span></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr">Nickname:&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" id="nickName" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox" style="width:400px;">
+                            <form action="#">
+                                <span class="attr">Gender:</span>
+                                <label><input type="radio" class="gender genderMale" name="gender" value="">Male</label>
+                                <label><input type="radio" class="gender genderFemale" name="gender" value="">Female</label>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><a href="javascript:void(0);" class="saveLink">SAVE CHANGES</a></div>
+
+                        <div class="col-xs-12 col-sm-12 passwordBox"><span class="password">PASSWORD</span></div>
+                        <div class="col-xs-12 col-sm-12 attrBox attrBox2"><span class="attr attr2">Current password:</span><input id="oldpass" type="text" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox attrBox3"><span class="forget">Forgot your password?</span></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr attr2">New password:</span><input id="newpass" type="text" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr attr2">Verify  password:</span><input id="verifypass" type="text" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><a href="###" class="resetLink">RESET PASSWARD</a></div>
+                    </div>
+                    <div class="row part part2" style="display: none;">
+                        <form action="#" class="form" style="position: relative;left: -80px;">
+                            <label  style="visibility: hidden;" class="sell"><input name="sell" type="radio" checked value="" />&nbsp;&nbsp;ALL</label>
+                            <label class="sell"><input name="sell" type="radio" value="" />&nbsp;&nbsp;Published</label>
+                            <label class="sell"><input name="sell" type="radio" value="" />&nbsp;&nbsp;Finished</label>
+                            <label class="sell"><input name="sell" type="radio" value="" />&nbsp;&nbsp;Offline</label>
+                            <!--<input id="search" name="search" type="text" value="" placeholder="Search..."/>-->
+                        </form>
+                        <div class="col-xs-12 col-sm-12 listTitle"><span class="gang">|</span><span><span id="searchName">ALL</span>(<span id="searchLength"></span>)</span></div>
+                        <ul class="row col-xs-12 col-sm-12 listUl">
+                            <!--<li class="row listLi">
+                                <div class="col-xs-2 col-sm-2 left"><img src="image/backManage/bigImg1.png"></div>
+                                <div class="col-xs-8 col-sm-8 middle">
+                                    <p class="title">Product title information</p>
+                                    <div class="count">
+                                        <img src="image/backManage/view.png">&nbsp;<span class="num view">20</span>
+                                        <img src="image/backManage/good.png">&nbsp;<span class="num good">20</span>
+                                        <img src="image/backManage/bad.png">&nbsp;<span class="num bad">20</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2 col-sm-2 right">
+                                    <img src="image/backManage/littleImg1.png"><br/>
+                                    <a href="#">OFFLINE</a>
+                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="part part3" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/drag.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/base64.js"></script>
+<script type="text/javascript" src="js/jsencrypt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<!--<script type="text/javascript" src="js/headerBox.js"></script>-->
+<!--<script type="text/javascript" src="js/searchBoxRight.js"></script>-->
+<script type="text/javascript" id="headerBoxFun"></script>
+<script type="text/javascript" id="searchBoxRightFun"></script>
+<script type="text/javascript" id="manageFun"></script>
+<script type="text/javascript">
+    $('#headerBoxFun').attr('src', 'js/headerBox.js?v='+mathRandomResult);
+    $('#searchBoxRightFun').attr('src', 'js/searchBoxRight.js?v='+mathRandomResult);
+    $('#manageFun').attr('src', 'js/manage.js?v='+mathRandomResult);
+</script>
+</body>
+</html>

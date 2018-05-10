@@ -1,0 +1,321 @@
+body {
+  position: relative;
+  background-color: #EBEBEB;
+}
+/*swiper-container*/
+.swiper-container {
+  height: 6.5625rem;
+  width: 100%;
+}
+.swiper-container .swiper-wrapper {
+  width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 6.5625rem;
+}
+/*messageBox*/
+.messageBox {
+  background-color: #FBFBFB;
+  position: relative;
+  overflow: hidden;
+  padding: 0.3125rem 0;
+  border-top: 0.25rem solid #e9e9e9;
+}
+.messageBox .msgTip {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  border-right: 1px solid #999;
+  padding-top: 0.125rem;
+  padding-right: 0.75rem;
+}
+.messageBox .msgTip .msgImg {
+  padding: 0 0.3125rem;
+  width: 2.25rem;
+}
+.messageBox .msgTip .msgNum {
+  position: absolute;
+  display: inline-block;
+  right: 0.4375rem;
+  top: -0.3125rem;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  text-align: center;
+  background: url("../image/index/roundBg.png") no-repeat center;
+  background-size: 100% 100%;
+  font-size: 0.75rem;
+}
+.messageBox .msgTip .msgNum .msgNumText {
+  position: relative;
+  height: 100%;
+  top: -0.0625rem;
+}
+.messageBox .msgTip .msgNum .msgNumTextOpera {
+  position: relative;
+  height: 100%;
+  top: -0.215rem;
+}
+.messageBox #msgBox {
+  overflow: hidden;
+  height: 1.875rem;
+  margin-left: 3rem;
+  text-align: justify;
+  padding: 0 0.5rem;
+}
+.messageBox .adList li {
+  height: 1.875rem;
+  line-height: 0.9375rem;
+  color: #333333;
+  font-size: 0.8125rem;
+}
+.messageBox .adList .totalMsg,
+.messageBox .adList .checkMsg {
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+.messageBox .adList #totalUsers,
+.messageBox .adList #totalProduct,
+.messageBox .adList #checkPoint {
+  font-size: 1rem;
+  color: #FF4720;
+}
+/*bestGoods*/
+.bestGoods {
+  padding-top: 0.375rem;
+  padding-bottom: 0.625rem;
+  background-color: #E9E9E9;
+}
+.bestGoods .bestGoodsTitle {
+  height: 1.375rem;
+  position: relative;
+  margin-bottom: 0.625rem;
+  border-bottom: 1px solid #333;
+}
+.bestGoods .bestGoodsTitle span {
+  position: absolute;
+  left: 0;
+  top: 0.0625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.bestGoods .imgsBox {
+  cursor: pointer;
+  position: relative;
+  /*width: 236/@rem;*/
+  min-height: 4.875rem;
+  width: 100%;
+}
+.bestGoods .imgsBox .imgBox {
+  width: 23%;
+  height: 4.6875rem;
+  margin: 0 1%;
+  padding: 0 0.5rem;
+}
+.bestGoods .imgsBox .imgBox img {
+  width: 100%;
+}
+/*recentOrNear*/
+.recentOrNear {
+  padding-bottom: 0.625rem;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.recentOrNear .title {
+  font-size: 0.8125rem;
+  color: #333333;
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.recentOrNear .active {
+  color: #fff;
+  background-color: #FF4720;
+}
+.recentOrNear .getList {
+  background-color: #E9E9E9;
+}
+.recentOrNear .getList .getLi {
+  margin-top: 0.625rem;
+  padding: 0 0.5rem;
+  width: 31.3%;
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+  height: 7.25rem;
+}
+.recentOrNear .getList .getLi img {
+  width: 100%;
+  height: 4.875rem;
+  border: 1px solid #FF4720;
+}
+.recentOrNear .getList .getLi .price {
+  position: absolute;
+  left: 0;
+  bottom: -0.125rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+}
+.recentOrNear .getList .getLi .price span {
+  display: inline-block;
+  width: 100%;
+  font-size: 0.75rem;
+  padding-right: 0.3125rem;
+  background-color: #FF4720;
+}
+/*contactBox*/
+.contactBox {
+  line-height: 1.75rem;
+  margin-bottom: 3.125rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 1px dotted #FF4720;
+}
+.contactBox a {
+  color: #333;
+  text-decoration: underline;
+}
+.container {
+  transform: none;
+}
+/*infos*/
+.infos {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  box-shadow: 0 0 1.25rem #333333;
+}
+.infos .part {
+  font-size: 0.875rem;
+  color: #fff;
+  text-align: center;
+  background-color: #FF4720;
+  padding: 0.625rem 0;
+  font-weight: bold;
+}
+.infos .indexPublish {
+  background: #ff4720 url("../image/index/borderWhite.png") no-repeat right top;
+  background-size: 1px 100%;
+}
+.infos .part span {
+  text-decoration: underline;
+}
+/*classifyBox*/
+/*
+.classifyBox{
+  //margin-top:40/@rem;
+  //display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 40/@rem;
+  background-color: #fff;
+}
+.classifyBox .eachClass{
+  font-size: 0.875rem;
+  color: #666;
+  //height: 2rem;
+  line-height: 2rem;
+  border-top: 1px solid #999999;
+}
+.classifyBox .eachClass .eachClassName{
+  padding-left: 0.625rem;
+  text-decoration: underline;
+}*/
+.classifyBoxWrap {
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 0.125rem 0.375rem #999999;
+}
+.classifyBox {
+  background-color: #fff;
+  position: relative;
+  left: 0.3125rem;
+}
+.classifyBox .classifyLi .firstName {
+  text-align: right;
+  padding-right: 0.9375rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: bold;
+}
+.classifyBox .classifyLi .secondNames {
+  padding-left: 1.125rem;
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 2rem;
+  border-left: 1px solid #999;
+}
+.classifyBox .classifyLi .secondNames .secondName {
+  height: 2rem;
+  line-height: 2rem;
+  padding-right: 0.625rem;
+  text-decoration: underline;
+}
+/*showPointBox*/
+.showPointBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+}
+.showPointBox .showPoint {
+  width: 100%;
+  height: 16.875rem;
+  margin-top: 9.375rem;
+  background: url("../image/index/jiFen.png") no-repeat center;
+  background-size: 100%;
+  text-align: center;
+  position: relative;
+}
+.showPointBox .showPoint .title {
+  font-size: 1.75rem;
+  color: #1E1E1E;
+  padding-top: 4.125rem;
+}
+.showPointBox .showPoint .desc1 {
+  font-size: 1rem;
+  color: #CCCCCC;
+  padding-top: 2rem;
+}
+.showPointBox .showPoint .desc2 {
+  font-size: 1rem;
+  color: #CCCCCC;
+  text-decoration: underline;
+}
+.showPointBox .showPoint .ok {
+  display: inline-block;
+  width: 4rem;
+  height: 1.25rem;
+  line-height: 0.625rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  color: #CCCCCC;
+  outline: none;
+  border: 1px solid #CCCCCC;
+  background: #FB293C;
+  margin-top: 1.5rem;
+}
+.showPointBox .showPoint .close {
+  position: absolute;
+  top: 0;
+  right: 5.625rem;
+  width: 1.5625rem;
+  background-color: #fff;
+}

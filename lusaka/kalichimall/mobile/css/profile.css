@@ -1,0 +1,273 @@
+body {
+  overflow: auto;
+  /*background-color: #E9E9E9;*/
+}
+/*searchBox*/
+.searchBox {
+  background-color: #F2F2F2;
+}
+.searchBox .search {
+  height: 7.5rem;
+  margin: 0 auto;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.searchBox .search .searchLeft .part1 .headImg {
+  text-align: center;
+  padding: 0.75rem 0 0.3125rem 0;
+}
+.searchBox .search .searchLeft .part1 .headImg img {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+}
+.searchBox .search .searchLeft .part1 .name {
+  font-size: 0.875rem;
+  color: #333;
+  text-align: center;
+}
+.searchBox .search .searchLeft .part2 {
+  text-align: center;
+  padding-top: 1.25rem;
+  width: 7.5rem;
+}
+.searchBox .search .searchLeft .leftSize {
+  /*padding-right: 40/@rem;*/
+}
+.searchBox .search .searchLeft .part2 .number {
+  font-size: 3rem;
+  color: #3399FF;
+  font-weight: bold;
+  line-height: 3.125rem;
+}
+.searchBox .search .searchLeft .part2 .sort {
+  font-size: 0.875rem;
+  color: #FF4720;
+  border-top: 1px solid #FF4720;
+}
+/*publishBox*/
+.publishBox .publish {
+  margin: 0 auto;
+}
+.publishBox .publish .publishText {
+  width: 73.75rem;
+  height: 7.5rem;
+  margin: 0.625rem;
+  resize: none;
+  outline: none;
+  padding: 0.3125rem;
+  border: 1px solid #999;
+}
+.publishBox .publish .publishBtnBox {
+  text-align: right;
+  padding-right: 0.625rem;
+  padding-top: 1rem;
+}
+.publishBox .publish .publishBtnBox .publishBtn {
+  display: inline-block;
+  text-align: center;
+  width: 7.9375rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  color: #fff;
+  font-size: 0.8125rem;
+  border: none;
+  outline: none;
+  background-color: #FF4720;
+}
+/*sellingBox*/
+.sellingBox .selling {
+  margin: 0 auto;
+  padding-bottom: 0.625rem;
+}
+.sellingBox .selling .sellingTitle {
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.sellingBox .selling .sellingTitle .gang {
+  color: #FF4720;
+  padding-left: 0.3125rem;
+}
+.sellingBox .selling .sellingHeight {
+  height: 5.3125rem;
+  overflow: hidden;
+}
+.sellingBox .selling .sellingList .sellingLink {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0.625rem;
+  padding: 0 0.5rem;
+}
+.sellingBox .selling .sellingList .sellingLink .goodImgWrap {
+  display: inline-block;
+  width: 4.8125rem;
+  height: 4.8125rem;
+}
+.sellingBox .selling .sellingList .sellingLink .goodImg {
+  width: 4.8125rem;
+  height: 4.8125rem;
+  border: 1px solid #FF4720;
+}
+.sellingBox .selling .sellingList .sellingLink .desc {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.375rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #FF4720;
+}
+.sellingBox .selling .sellingList .sellingLink .left {
+  font-weight: bold;
+}
+.sellingBox .selling .sellingList .sellingLink .right {
+  text-align: right;
+}
+.sellingBox .selling .more {
+  background-color: #E6E6E6;
+  font-size: 0.8125rem;
+  text-align: center;
+  padding: 0.125rem 0;
+}
+.sellingBox .selling .more .moreText {
+  color: #333333;
+}
+.sellingBox .selling .more .moreText:before {
+  display: inline-block;
+  position: relative;
+  top: 0.3125rem;
+  left: -0.25rem;
+  content: "";
+  font-size: 0;
+  border-top: 0.4375rem solid #333333;
+  border-bottom: 0.4375rem solid transparent;
+  border-left: 0.4375rem solid transparent;
+  border-right: 0.4375rem solid transparent;
+}
+/*likeBox*/
+.likeBox .like {
+  margin: 0 auto;
+  padding-bottom: 0.625rem;
+}
+.likeBox .like .likeTitle {
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.likeBox .like .likeTitle .gang {
+  color: #FF4720;
+  padding-left: 0.3125rem;
+}
+.likeBox .like .likeHeight {
+  height: 13.125rem;
+  overflow: hidden;
+}
+.likeBox .like .likeList .likeLink {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+.likeBox .like .likeList .likeLink .goodImgWrap {
+  display: inline-block;
+  width: 4.8125rem;
+  height: 4.8125rem;
+}
+.likeBox .like .likeList .likeLink .goodImg {
+  width: 4.8125rem;
+  height: 4.8125rem;
+  border: 1px solid #FF4720;
+}
+.likeBox .like .likeList .likeLink .desc {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.375rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #FF4720;
+}
+.likeBox .like .likeList .likeLink .left {
+  font-weight: bold;
+}
+.likeBox .like .likeList .likeLink .right {
+  text-align: right;
+}
+.likeBox .like .more {
+  background-color: #E6E6E6;
+  font-size: 0.8125rem;
+  text-align: center;
+  padding: 0.125rem 0;
+}
+.likeBox .like .more .moreText {
+  color: #333333;
+}
+.likeBox .like .more .moreText:before {
+  display: inline-block;
+  position: relative;
+  top: 0.3125rem;
+  left: -0.25rem;
+  content: "";
+  font-size: 0;
+  border-top: 0.4375rem solid #333333;
+  border-bottom: 0.4375rem solid transparent;
+  border-left: 0.4375rem solid transparent;
+  border-right: 0.4375rem solid transparent;
+}
+/*messageBox*/
+.messageBox {
+  margin-bottom: 3.75rem;
+}
+.messageBox .message {
+  margin: 0 auto;
+  padding-bottom: 0.625rem;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+}
+.messageBox .message .messageTitle {
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.messageBox .message .messageTitle .gang {
+  color: #FF4720;
+}
+/*infos*/
+.infos {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 1.25rem #333333;
+}
+.infos .part {
+  font-size: 0.875rem;
+  padding: 0.625rem 0;
+  color: #fff;
+  text-align: center;
+  background-color: #FF4720;
+  font-weight: bold;
+}
+.infos .profilePublish {
+  background: #ff4720 url("../image/index/borderWhite.png") no-repeat right top;
+  background-size: 1px 100%;
+}
+.infos .goToHome {
+  background: #ff4720 url("../image/index/borderWhite.png") no-repeat left top;
+  background-size: 1px 100%;
+}
+.infos .part span {
+  text-decoration: underline;
+}

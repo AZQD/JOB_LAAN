@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>input被挡住</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <style type="text/css">
+        #ipt{
+            width: 200px;
+            border: 1px solid blue;
+            outline: none;
+            position: relative;
+            z-index: 9;
+        }
+        #box1{
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 999;
+            width: 100px;
+            height: 100px;
+            background-color: fuchsia;
+        }
+        #box2{
+            position: absolute;
+            left:0;
+            top:150px;
+            z-index: 999;
+            width: 100px;
+            height: 100px;
+            background-color: fuchsia;
+        }
+
+        #test1{
+            margin-top: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        #test2{
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+<input type="text" id="ipt">
+<div id="box1"></div>
+<div id="box2"></div>
+<hr/>
+<div id="test1"></div>
+<div id="test2"></div>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#box1').unbind('click').click(function(ev){
+            ev.stopPropagation();
+            $('#ipt').attr('disabled', 'disabled');
+        });
+        $('#box2').unbind('click').click(function(ev){
+            ev.stopPropagation();
+            $('#ipt').removeAttr('disabled');
+        });
+
+
+        $('#test1').unbind('click').click(function(ev){
+            ev.stopPropagation();
+            $('#test2').show();
+        });
+
+
+
+        //为了兼容opera mini，用了延时500ms
+        if(window.localStorage.foobar == "foobar"){
+            window.location.href = 'index.html';
+        }else{
+            setTimeout(function(){
+                window.location.href = 'index.html';
+            }, 500);
+        }
+
+
+    });
+</script>
+</body>
+</html>

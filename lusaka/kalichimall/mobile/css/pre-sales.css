@@ -1,0 +1,288 @@
+.headerBox .right {
+  position: relative;
+}
+.headerBox .right #preSalesIpt {
+  border: none;
+  outline: none;
+  width: 4.375rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.25rem;
+  background-color: #E4ACA8;
+  padding-right: 1.75rem;
+  margin-top: 0.375rem;
+}
+.headerBox .right #preSalesSearchBtn {
+  width: 3rem;
+  /* vertical-align: -0.625rem; */
+  position: absolute;
+  top: -0.4rem;
+  right: 2rem;
+}
+.headerBox .right #preSalesSort {
+  width: 1.4rem;
+  margin: 0 0.375rem;
+  padding-top: 0.25rem;
+}
+/*classifyBox*/
+.classifyBoxWrap {
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 0.125rem 0.375rem #999999;
+}
+.classifyBox {
+  background-color: #fff;
+  position: relative;
+  left: 0.3125rem;
+}
+.classifyBox .classifyLi .firstName {
+  text-align: right;
+  padding-right: 0.9375rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.875rem;
+  color: #333;
+  font-weight: bold;
+}
+.classifyBox .classifyLi .secondNames {
+  padding-left: 1.125rem;
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 2rem;
+  border-left: 1px solid #999;
+}
+.classifyBox .classifyLi .secondNames .secondName {
+  height: 2rem;
+  line-height: 2rem;
+  padding-right: 0.625rem;
+  text-decoration: underline;
+}
+/*rulesBox*/
+.rulesBox {
+  border: 1px solid #FF4720;
+  background-color: #F2F2F2;
+  text-align: center;
+  height: 5.625rem;
+  line-height: 5.625rem;
+}
+/*toggleSortBox*/
+.toggleSortBox .toggleSort {
+  padding: 0.25rem 0;
+  border-bottom: 0.125rem solid #ff4720;
+  background-color: #F1DCDC;
+}
+.toggleSortBox .toggleSort .tab {
+  text-align: center;
+  border-right: 1px solid #333;
+}
+.toggleSortBox .toggleSort .tab:last-child {
+  border-right: none;
+}
+.toggleSortBox .toggleSort .tab .text {
+  font-size: 0.875rem;
+  color: #333333;
+  font-weight: bold;
+}
+.toggleSortBox .toggleSort .tab .text:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.5rem solid #000000;
+  border-right: 0.375rem solid transparent;
+  border-bottom: 0.375rem solid transparent;
+  border-left: 0.375rem solid transparent;
+  position: relative;
+  top: 0.375rem;
+  left: 0.125rem;
+}
+.toggleSortBox .toggleList {
+  position: relative;
+}
+.toggleSortBox .toggleList .uls {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  text-align: center;
+  border-bottom: 1px solid #999999;
+}
+.toggleSortBox .toggleList .uls li {
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 0.8125rem;
+  color: #333333;
+  border: 1px solid #999999;
+  border-bottom: none;
+  background-color: #fff;
+}
+.toggleSortBox .toggleList .hotUl {
+  left: 0;
+}
+.toggleSortBox .toggleList .newUl {
+  left: 33.33333%;
+}
+.toggleSortBox .toggleList .pricesUl {
+  left: 66.66666%;
+}
+/*goodsBox*/
+.goodsBox {
+  margin-bottom: 3.75rem;
+  background-color: #F2F2F2;
+}
+.goodsBox .goods {
+  cursor: pointer;
+  margin: 0 auto;
+  /*background-color: #baf;*/
+  padding: 0.625rem;
+  border-bottom: 1px dotted #666;
+}
+.goodsBox .goods:last-child {
+  border-bottom: 0;
+}
+.goodsBox .goods .goodsLeft {
+  height: 5rem;
+}
+.goodsBox .goods .goodsLeft img {
+  width: 100%;
+  height: 100%;
+  padding-right: 1.25rem;
+}
+.goodsMiddle {
+  text-align: left;
+}
+.goodsBox .goods .goodsMiddle .goodDesc {
+  font-size: 0.875rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.goodsBox .goods .goodsRight {
+  text-align: center;
+  padding-top: 1.125rem;
+}
+.goodsBox .goods .goodsRight1 {
+  font-size: 0.75rem;
+  color: #fff;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  padding: 0 1rem;
+  background-color: #ff4720;
+  border-radius: 0.25rem;
+}
+/*tableData*/
+.tableBox {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 4.125rem;
+  background-color: #fff;
+}
+#tableData {
+  text-align: center;
+  font-family: '微软雅黑';
+  width: 100%;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+#tableData tr {
+  border-top: 1px solid #666;
+}
+#tableData tr:last-child {
+  border-bottom: 1px solid #666;
+}
+#tableData th {
+  width: 4.125rem;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  color: #FF4720;
+  font-size: 0.75rem;
+}
+#tableData td {
+  width: 4.125rem;
+  height: 1.25rem;
+  color: #333;
+  line-height: 1.25rem;
+  font-size: 0.75rem;
+  padding: 0.25rem 0;
+}
+#tableData .remove {
+  width: 1.625rem;
+}
+#tableData .reduce {
+  width: 1.25rem;
+  letter-spacing: 0;
+}
+#tableData .numberWrap {
+  display: inline-block;
+  width: 2.25rem;
+  height: 1.25rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #333333;
+  border: 0.125rem solid #ff4720;
+  border-radius: 0.3125rem;
+  letter-spacing: 0;
+  vertical-align: -0.125rem;
+}
+#tableData .add {
+  width: 1.25rem;
+  letter-spacing: 0;
+}
+/*infos*/
+.infos {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 1.25rem #333333;
+}
+.infos .part {
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  color: #fff;
+  text-align: center;
+  background-color: #FF4720;
+  font-weight: bold;
+}
+.infos .preSalesPublish {
+  background: #ff4720 url("../image/index/borderWhite.png") no-repeat right top;
+  background-size: 1px 100%;
+}
+.infos .part span {
+  text-decoration: underline;
+}
+.infos .shopCartBox {
+  position: absolute;
+  z-index: 9;
+  width: 3.125rem;
+  height: 3.125rem;
+  line-height: 3.125rem;
+  text-align: center;
+  left: calc(43.75%);
+  top: -1.625rem;
+  background-color: #FF4720;
+  border-radius: 3.125rem;
+}
+.infos .shopCartBox .shopCart {
+  width: 1.875rem;
+}
+.infos .shopCartBox .count {
+  position: absolute;
+  right: -0.3125rem;
+  top: -1.25rem;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/*H5页面 绝对定位元素被软键盘弹出时顶起*/
+@media (max-height: 400px) {
+  .tableBox,
+  .infos {
+    display: none;
+  }
+}

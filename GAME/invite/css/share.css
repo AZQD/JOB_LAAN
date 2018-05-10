@@ -1,0 +1,195 @@
+body {
+  font-family: '微软雅黑';
+}
+.container {
+  min-height: 100vh;
+  width: 10rem;
+  background: url("../image/bodyBg.png") no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0.99609375rem;
+  overflow-x: hidden;
+}
+.container .partA {
+  height: 3.14453125rem;
+  width: 100%;
+  position: relative;
+}
+.container .partA .partAImg1 {
+  position: absolute;
+  width: 9.90234375rem;
+  left: 0.17578125rem;
+  top: 0;
+}
+.container .partA .partAImg2 {
+  position: absolute;
+  z-index: 1;
+  width: 7.03125rem;
+  height: 3.3203125rem;
+  left: 1.953125rem;
+  top: 0.52734375rem;
+}
+.container .partB {
+  height: 1.58203125rem;
+  width: 100%;
+  position: relative;
+}
+.container .partB .partBImg1 {
+  position: absolute;
+  width: 100%;
+  left: 0rem;
+  top: 0.078125rem;
+  padding: 0 0.05859375rem;
+}
+.container .partB .partBImg2 {
+  position: absolute;
+  z-index: 1;
+  width: 6.65039063rem;
+  height: 0.83007813rem;
+  left: 1.89453125rem;
+  bottom: 0.2734375rem;
+}
+.container .partC {
+  position: relative;
+  z-index: 2;
+  background: url("../image/partCBg.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 0.06835938rem;
+}
+.container .partC .boxVS {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 0.546875rem;
+}
+.container .partC .boxVS .gifBox {
+  background-color: yellow;
+  padding: 0.48828125rem 0.78125rem;
+}
+.container .partC .boxVS .gifBox .gifImg {
+  width: 100%;
+  background-color: red;
+}
+.container .partC .boxVS .userName {
+  font-size: 0.41015625rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 0.2734375rem;
+  /*新增*/
+  width: 100%;
+  top: 5.22460938rem;
+  opacity: .9;
+}
+.container .partC .boxVS .userName .userNameBg {
+  text-shadow: 0.04882813rem 0.04882813rem 0.48828125rem #000000;
+  background: url("../image/userNameBg.png") no-repeat;
+  background-size: 100% 0.625rem;
+}
+.container .partC .boxVS .userName .helper {
+  display: none;
+}
+.container .partC .boxVS .hasHelper .leftBox {
+  position: relative;
+  top: -0.3125rem;
+}
+.container .partC .boxVS .hasHelper .leftBox .helper {
+  display: block;
+  position: absolute;
+  top: 0.60546875rem;
+}
+.container .partC .boxVS .vs {
+  position: absolute;
+  left: 3.84765625rem;
+  bottom: 0;
+  width: 2.41210938rem;
+  z-index: 6;
+}
+.container .partC .downloadWarp {
+  position: relative;
+  padding: 0.3125rem 0.2734375rem 0.7421875rem 0.2734375rem;
+  margin: 0 0.64453125rem;
+}
+.container .partC .downloadWarp .part {
+  text-align: center;
+}
+.container .partC .downloadWarp .part .btnBox .btn {
+  width: 3.26171875rem;
+  height: 1.484375rem;
+  line-height: 0.9765625rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.5859375rem;
+  text-shadow: 0 0 0.15625rem #000000;
+  padding-bottom: 0.09765625rem;
+}
+.container .partC .downloadWarp .part .btnBox .leftBtn {
+  background: url("../image/leftBtn.png") no-repeat;
+  background-size: 100% 100%;
+}
+.container .partC .dangAnBox {
+  width: 8.66210938rem;
+  height: 4.1796875rem;
+  background: url("../image/share_dangAnBg.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: 0.7421875rem;
+  position: relative;
+}
+.container .partC .dangAnBox .gamerImg {
+  height: 4.1796875rem;
+  position: absolute;
+  left: 0.3515625rem;
+  padding-top: 0.44921875rem;
+}
+.container .partC .dangAnBox .title {
+  height: 0.71289063rem;
+  text-align: center;
+  padding-top: 0.05859375rem;
+}
+.container .partC .dangAnBox .title img {
+  width: 2.80273438rem;
+}
+.container .partC .dangAnBox .info {
+  color: #fff;
+  font-size: 0.41015625rem;
+  padding-left: 3.828125rem;
+}
+.container .partC .dangAnBox .info .name {
+  padding: 0.390625rem 0;
+}
+.container .partC .explainBox {
+  padding-bottom: 1.77734375rem;
+  margin: 0 0.2734375rem;
+  position: relative;
+  top: -0.1953125rem;
+}
+.container .partC .explainBox .divide img {
+  width: 100%;
+}
+.container .partC .explainBox .explain {
+  padding: 0.09765625rem 0.546875rem;
+  color: #4b3636;
+  font-size: 0.41015625rem;
+}
+.container .partC .bottomImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #55403D;
+}
+.container .downTipBox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999999999999;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.9;
+}
+.container .downTipBox .tipImg {
+  width: 100%;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Center ad</title>
+    
+    <meta name="description" content="online game, html game, h5 game, iOS game, android game">
+    <meta name="author" content="youkongwan.com">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    
+    <style>
+    	html,
+		body {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		
+			width: 100%;
+			height: 100%;
+		
+			scroll:no;
+		
+			font-family: Arial, Verdana;
+		}
+	
+		.container {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-color: #DADADA;
+			overflow: hidden;
+		}
+	
+	
+		.closeImg {
+			width:40px;
+			height:40px;
+			position:absolute;
+			right:2px;
+		}
+	
+		.ad {
+			width: 100%;
+			height: 100%;
+			
+			#border:1px solid #DADADA
+		}
+	
+	
+		.ad img {
+			width:100%;
+			height:100%;
+		}
+		
+		
+    </style>
+    
+    
+    <script src="candyoyoad.js"></script>
+    <!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script-->
+
+    <script>
+    	
+    	(function() {
+			var urlParameters = new Object();
+			var url = location.search; //获取url中"?"符后的字串 
+			if (url.indexOf("?") != -1) { 
+				var str = url.substr(1); 
+				strs = str.split("&"); 
+				for(var i = 0; i < strs.length; i ++) { 
+					urlParameters[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]); 
+				} 
+			}
+			
+			document.reviveZoneID = urlParameters["reviveZoneID"];
+			document.reviveAdName = urlParameters["reviveAdName"];
+		})();
+		
+  	</script>
+  </head>
+  <body id="main">
+
+<div class="container" id="contentMain">
+	<div id="closeBtn_">
+		<img class="closeImg" onclick="toClose()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAq1BMVEUAAABmZmaAgIAAAABqamplZWVmZmZmZmZtbW1mZmZlZWVpaWlfX19ISEhaWlpRUVH////9/f1lZWVmZmbr6+vo6OhnZ2dmZmZmZmZlZWVdXV38/Px0dHQrKytmZmZlZWVmZmZmZma4uLitra1lZWU/Pz9lZWVmZmZlZWXj4+O/v7+6urq2traXl5dlZWXx8fHs7OzHx8czMzMAAABlZWXy8vLu7u6ioqL///8EFT2qAAAAOHRSTlMAmQIBl5ahnpqYpJqXlJaV/fxRKeTgl48XDQP6nZF+eXAwt7KTk2U9Itq9uraoWuvmwpKPg+3nrft64tAAAAGkSURBVDjL7dOJbqMwEAZgDOMDG9sJEEjIAbmPJr22u+v3f7KOU1WV4tC+QH+BBOhjGI9w1JMkxkQ/Jk6+Lr5jeE4ORVGM/c23brmrCeecLvJJlCS9btwxxkmapoTLeh9F92UTHTYSABlSACUfUd6vt+FgrSAYRXQGKEOIj5o3Ru3/i0YpjFjPLMg9vh4WzCXoFzc8z4UwpHTPM6pqXFFQcFKTSj+5gVu9ZqZ0Q3fegsyjOCi4Z1TZlcOstiN0I0Uqvkii5BbuGCVi7uX0n3cmUymh47DLllOC8gElujIzAsfEiwA2Cw/J7M+DGwzdk83QEcqWON6beJiKjBzdYOCm560gKakQxrer7rBHlWUjXLc/1nMvyQFhMEZ6dVM3OiEcrrci5cEgERa8An1E93zt000vFljnXdgk6NK5UpnZ/OTw4xrCFn3JJQNzKY/KCCJeT39fLMju/t/4KMFonSmcEmirKd+E48ZgMzsJAOgwogK2+VxyKHPOKvoRJd++6oWyaLlk19R5EzX9Wxpp3rVtu9tPfNf9iYMd3k/jBBMj+81vevMObNMkK5bftZEAAAAASUVORK5CYII="/>
+	</div>
+	
+	<div id="adC_" class="ad" onclick="toOpen()">
+		<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://revive.youkongwan.cn/www/delivery/ajs.php':'http://revive.youkongwan.cn/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=" + document.reviveZoneID + "&amp;withtext=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>-->
+	</script>
+	</div>
+</div>
+</body>
+
+<script>	
+	init(document.reviveAdName, null, null, null, null);
+</script>
+</html>

@@ -1,0 +1,241 @@
+@charset "utf-8";a,b,body,button,dd,div,dl,dt,em,footer,h1,h2,h3,h4,h5,header,img,input,li,nav,ol,option,p,span,strong,table,td,th,tr,ul,var{margin:0;padding:0;outline:0;-webkit-touch-callout:none;-webkit-user-select:text;-moz-user-select:text}html{font-size:16px}@font-face{font-family:Regular;src:url(../font/DIN-Regular.otf)}@font-face{font-family:Bold;src:url(../font/DIN-Bold.otf)}body{width:100%;overflow-x:hidden;word-break:break-word;font-family:Regular,'.PingFang SC','Helvetica Neue',Helvetica,Verdana,Arial,sans-serif;-webkit-tap-highlight-color:rgba(0,0,0,0)}table{border-collapse:collapse;border-spacing:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:400}li,ol,ul{list-style:none}em,i{font-style:normal}fieldset,img{border:none}img,input{vertical-align:middle}span{display:inline-block}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}a{background:0 0;cursor:pointer}a:active,a:hover{outline:0;text-decoration:none}a:link,a:visited,ins{text-decoration:none}button,textarea{font-size:100%;-webkit-appearance:none}.clear{clear:both;height:0;overflow:hidden}.hidden{display:none}.container,.row{padding:0}.line-1px{width:100%;height:1px;border-bottom:1px solid #d9d9d9;-webkit-transform:scaleY(0.5);-ms-transform:scaleY(0.5);transform:scaleY(0.5);-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}@media all and (max-width:1200px){html{font-size:18px}}@media all and (max-width:395px){html{font-size:16px}}@media all and (max-width:360px){html{font-size:15px}}@media all and (max-width:330px){html{font-size:14px}}
+
+/*首行缩进*/
+input,textarea{
+    padding-left: 0.3125rem !important;
+}
+
+/*commonPopBox1弹窗*/
+.commonPopBox1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.commonPopBox1 .commonPop {
+    width: 20.9375rem;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 9.375rem;
+}
+.commonPopBox1 .commonPop .title {
+    /*height: 2.3125rem;*/
+    /*line-height: 2.3125rem;*/
+    padding: 0.625rem 0;
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+    background-color: #cccccc;
+}
+.commonPopBox1 .commonPop .detailTip {
+    text-align: justify;
+    padding: 2rem 2.5rem;
+    font-size: 0.875rem;
+}
+.commonPopBox1 .commonPop .confirmBox {
+    font-size: 0.8125rem;
+    padding: 0.75rem 2.5rem;
+    text-align: center;
+}
+.commonPopBox1 .commonPop .confirmBox .confirmBtn {
+    cursor: pointer;
+    width: 7.9375rem;
+    /*height: 2.1875rem;*/
+    /*line-height: 2.1875rem;*/
+    padding: 0.5rem 0;
+    background-color: #ff4f0d;
+    color: #fff;
+    text-align: center;
+}
+/*commonPopBox2弹窗*/
+.commonPopBox2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.commonPopBox2 .commonPop {
+    width: 20.9375rem;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 9.375rem;
+}
+.commonPopBox2 .commonPop .title {
+    /*height: 2.3125rem;*/
+    /*line-height: 2.3125rem;*/
+    padding: 0.625rem 0;
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+    background-color: #cccccc;
+}
+.commonPopBox2 .commonPop .detailTip {
+    text-align: justify;
+    padding: 2rem 2.5rem;
+    font-size: 0.875rem;
+}
+.commonPopBox2 .commonPop .confirmBox {
+    font-size: 0.8125rem;
+    padding: 0.75rem 0;
+    text-align: center;
+}
+.commonPopBox2 .commonPop .confirmBox .confirmBtn {
+    cursor: pointer;
+    width: 7.9375rem;
+    /*height: 2.1875rem;*/
+    /*line-height: 2.1875rem;*/
+    padding: 0.5rem 0;
+    background-color: #ff4f0d;
+    color: #fff;
+    text-align: center;
+}
+
+/*commonPopBox3弹窗*/
+.commonPopBox3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.commonPopBox3 .commonPop {
+    width: 20.9375rem;
+    background-color: #fff;
+    margin: 0 auto;
+    /*margin-top: 9.375rem;*/
+    margin-top: 8rem;
+}
+.commonPopBox3 .commonPop .title {
+    /*height: 2.3125rem;*/
+    /*line-height: 2.3125rem;*/
+    color: #000;
+    font-weight: bold;
+    padding: 0.625rem 0;
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+    background-color: #FF4720;
+}
+.commonPopBox3 .commonPop .detailTip {
+    text-align: justify;
+    /*padding: 2rem 2.5rem;*/
+    padding: 1.2rem;
+    font-size: 0.875rem;
+}
+.commonPopBox3 .commonPop .confirmBox {
+    font-size: 0.8125rem;
+    padding: 0 2.5rem 0.75rem 2.5rem;
+    text-align: center;
+}
+.commonPopBox3 .commonPop .confirmBox .confirmBtn {
+    cursor: pointer;
+    width: 7.9375rem;
+    /*height: 2.1875rem;*/
+    /*line-height: 2.1875rem;*/
+    padding: 0.5rem 0;
+    background-color: #ff4f0d;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*headerBox*/
+body {
+    width: 100%;
+}
+.headerBox {
+    height: 2.5rem;
+    /*line-height: 2.5rem;*/
+    background-color: #DCDCDC;
+    position: fixed;
+    z-index: 9;
+}
+.headerBox .left .logo {
+    width: 100%;
+    padding: 0 0.375rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.5625rem;
+}
+.headerBox .left .sort {
+    /*width: 100%;*/
+    width:1.4rem;
+    margin: 0 0.375rem;
+    padding-bottom: 0.2rem;
+    margin-top: 0.4rem;
+}
+.headerBox .left .shopping {
+    /*width: 100%;*/
+    width:1.8rem;
+    margin: 0 0.375rem;
+    padding-bottom: 0.2rem;
+}
+
+.headerBox .indexMiddle {
+    text-align: center;
+    position: relative;
+    height: 2.5rem;
+}
+.headerBox .manageMiddle, .headerBox .profileMiddle, .headerBox .publishMiddle, .headerBox .preSalesMiddle{
+    font-size: 1rem;
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 0.4375rem;
+}
+.headerBox .indexMiddle .address {
+    color: #333333;
+    font-size: 1.125rem;
+}
+.headerBox .indexMiddle .address:after {
+    display: inline-block;
+    content: "";
+    border-top: 0.45rem solid #000000;
+    border-right: 0.4rem solid transparent;
+    border-bottom: 0.4rem solid transparent;
+    border-left: 0.4rem solid transparent;
+    position: relative;
+    top: 0.325rem;
+    left: 0.125rem;
+}
+.headerBox .indexMiddle .address2{
+    /*padding-left:3.4rem;*/
+}
+.headerBox .indexMiddle .address2:after{
+    display: none;
+}
+.headerBox .indexMiddle .addressUl {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    top: 2.5rem;
+}
+.headerBox .indexMiddle .addressUl .addressLi {
+    margin: 0 auto;
+    width: 6.375rem;
+    /*height: 1.875rem;*/
+    /*line-height: 1.875rem;*/
+    padding: 0.3125rem 0;
+    font-size: 0.8125rem;
+    color: #333333;
+    border: 1px solid #999999;
+    border-bottom: none;
+    background-color: #fff;
+}
+.headerBox .indexMiddle .addressUl .addressLi:last-child {
+    border-bottom: 1px solid #cccccc;
+}
+
+.headerBox .right {
+    text-align: right;
+    padding-right: 0.125rem;
+}
+.headerBox .right .search {
+    width: 3rem;
+    /*vertical-align: -0.625rem;*/
+    position: relative;
+    top:-0.45rem;
+}
+.headerBox .right .logout {
+    text-decoration: underline;
+    padding-right: 0.375rem;
+}

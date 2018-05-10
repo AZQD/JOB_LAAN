@@ -1,0 +1,398 @@
+.infoBox .info .infoWrap .infoRight {
+  position: relative;
+}
+.infoBox .info .infoWrap .infoRight .part1 {
+  padding-top: 1.875rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox {
+  font-size: 0.875rem;
+  height: 1.4375rem;
+  line-height: 1.4375rem;
+  margin-bottom: 0.5rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBoxSave {
+  text-align: center;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBoxReset {
+  text-align: center;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox2 {
+  margin-bottom: 0;
+  margin-top: 1.625rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox3 {
+  margin-bottom: 0.5rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .attr {
+  padding-left: 0.625rem;
+  color: #333;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .attr2 {
+  width: 9.625rem;
+  color: #333;
+  text-align: right;
+  margin-right: 1.875rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .value {
+  color: #666;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .nikeNameIpt {
+  width: 9.875rem;
+  font-size: 0.8125rem;
+  color: #999999;
+  border: 1px solid #666;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .gender {
+  margin-left: 2rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .saveLink {
+  display: inline-block;
+  width: 10rem;
+  padding: 0.375rem 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.5rem;
+  background-color: #FF4720;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .resetLink {
+  display: inline-block;
+  width: 10rem;
+  padding: 0.375rem 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.625rem;
+  background-color: #FF4720;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .logoutLink {
+  display: inline-block;
+  width: 10rem;
+  padding: 0.375rem 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 0.625rem;
+  background-color: #FF4720;
+}
+.infoBox .info .infoWrap .infoRight .part1 .attrBox .forget {
+  cursor: pointer;
+  color: #169BD5;
+  font-size: 0.75rem;
+  padding-left: 11.75rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .passwordBox {
+  margin-left: 0.625rem;
+  margin-top: 4.125rem;
+  font-size: 0.875rem;
+  border-bottom: 1px dashed #666;
+}
+.infoBox .info .infoWrap .infoRight .part1 .passwordBox .password {
+  line-height: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.infoBox .info .infoWrap .infoRight .part1 .logoutBox {
+  margin-bottom: 4.125rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .logoutName {
+  margin-left: 0.625rem;
+  margin-top: 4.125rem;
+  font-size: 0.875rem;
+  border-bottom: 1px dashed #666;
+}
+.infoBox .info .infoWrap .infoRight .part1 .logoutName .logoutText {
+  line-height: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.infoBox .info .infoWrap .infoRight .part1 .headBox {
+  position: absolute;
+  width: 5rem;
+  text-align: center;
+  right: 0.625rem;
+  top: 1.375rem;
+  height: 6.25rem;
+}
+.infoBox .info .infoWrap .infoRight .part1 .headBox .headImg {
+  border-radius: 2.5rem;
+  height: 5rem;
+  width: 100%;
+}
+.infoBox .info .infoWrap .infoRight .part1 .headBox .goToEdit {
+  /*cursor: pointer;*/
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.infoBox .info .infoWrap .infoRight .part1 .headBox .editLink {
+  color: #169BD5;
+  font-size: 0.8125rem;
+  text-decoration: underline;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.infoBox .info .infoWrap .infoRight .part2 {
+  /*background-color: #bfa;*/
+  padding-top: 2.625rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .form {
+  height: 1.375rem;
+  line-height: 1.375rem;
+  text-align: center;
+}
+.infoBox .info .infoWrap .infoRight .part2 .form .sell {
+  padding-left: 0.75rem;
+  background: url("../image/backManage/noChecked.png") no-repeat left center;
+  background-size: 1rem 1rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+/*@media screen and (max-width:320px) {
+  .infoBox .info .infoWrap .infoRight .part2 .form .sell{
+    padding-left: 12/@rem;
+  }
+}*/
+.infoBox .info .infoWrap .infoRight .part2 .form .sellActive {
+  background: url("../image/backManage/hasChecked.png") no-repeat left center;
+  background-size: 1rem 1rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .form .sell input {
+  vertical-align: -0.125rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .form #search {
+  width: 3.75rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-left: 0.5rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .form #search::-webkit-input-placeholder {
+  color: #ccc;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listTitle {
+  font-size: 1.125rem;
+  color: #333;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listTitle .gang {
+  color: #FF4720;
+  padding-right: 0.3125rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl {
+  background-color: #F2F2F2;
+  margin-bottom: 2.5rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 0.375rem;
+  border-bottom: 1px solid #797979;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .left {
+  text-align: center;
+  height: 5.625rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .left img {
+  width: 5.625rem;
+  height: 100%;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .middle {
+  position: relative;
+  height: 5.625rem;
+  /*width: 410/@rem;*/
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .middle .title {
+  padding-left: 1.125rem;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .middle .count {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.375rem;
+  line-height: 1.375rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .middle .count img {
+  width: 1.125rem;
+  margin-left: 0.75rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .middle .count .wishs {
+  width: 0.875rem;
+  margin-left: 0.75rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .middle .count .num {
+  color: #333333;
+  vertical-align: -0.125rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .right {
+  /*width: 156/@rem;*/
+  height: 5.875rem;
+  text-align: right;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .right img {
+  padding-top: 0.875rem;
+  width: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .right a {
+  font-size: 0.875rem;
+  color: #333;
+  /*padding-left: 12/@rem;*/
+  text-decoration: underline;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .right .editBtn {
+  display: inline-block;
+  width: 4.375rem;
+  padding: 0.25rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #FF4720;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .right .goodStatus {
+  text-decoration: underline;
+}
+.infoBox .info .infoWrap .infoRight .part2 .listUl .listLi .right .link2 {
+  margin-right: 1rem;
+}
+/*managePopBox弹窗*/
+.managePopBox {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+}
+.managePopBox .managePop {
+  background-color: #fff;
+  margin: 3.125rem auto 0 auto;
+  padding: 0.75rem 1rem;
+  position: relative;
+}
+.managePopBox .managePop .closePopImg {
+  width: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.managePopBox .managePop .fileBtn {
+  position: relative;
+}
+.managePopBox .managePop .fileBtn .upload {
+  /*float: left;*/
+  width: 7.9375rem;
+  padding: 0.5rem 0;
+  margin-right: 1rem;
+  font-size: 0.8125rem;
+  color: #fff;
+  background-color: #FF4720;
+  /*padding: 4/@rem 10/@rem;*/
+  position: absolute;
+  left: 0;
+  /*bottom: 0;*/
+  text-align: center;
+  cursor: pointer;
+  /*width: 100%;*/
+  /*border-radius: 4/@rem;*/
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.managePopBox .managePop .fileBtn .upload input {
+  position: absolute;
+  font-size: 6.25rem;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+.managePopBox .managePop .warning {
+  padding-top: 2.5rem;
+  font-size: 0.8125rem;
+  color: #999;
+  padding-bottom: 0.3125rem;
+}
+.managePopBox .managePop .imgBox {
+  background-color: #F9F9F9;
+  margin: 0 auto;
+  border: 1px solid #E9EAEC;
+  margin-top: 0.5rem;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  padding: 0.625rem 0;
+}
+.managePopBox .managePop .imgBox img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.managePopBox .managePop .recommedTitle {
+  font-size: 0.875rem;
+  color: #666;
+  padding-top: 1.125rem;
+  padding-bottom: 0.5rem;
+}
+.managePopBox .managePop .recommendBox {
+  padding-left: 0.125rem;
+}
+.managePopBox .managePop .recommendBox .choose {
+  cursor: pointer;
+  width: 3.125rem;
+  margin-right: 0.375rem;
+  margin-bottom: 0.625rem;
+}
+.managePopBox .managePop .recommendBox .choose:nth-child(6n) {
+  margin-right: 0;
+}
+.managePopBox .managePop .save {
+  text-align: center;
+}
+.managePopBox .managePop .save .saveBtn {
+  border: none;
+  outline: none;
+  width: 7.9375rem;
+  padding: 0.5rem 0;
+  font-size: 0.8125rem;
+  color: #fff;
+  background-color: #FF4720;
+}
+/*infos*/
+.infos {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 1.25rem #333333;
+}
+.infos .part {
+  font-size: 0.875rem;
+  padding: 0.625rem 0;
+  color: #FF500D;
+  text-align: center;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  font-weight: bold;
+}
+.infos .part:last-child {
+  border-right: none;
+}
+.infos .active {
+  color: #fff;
+  background-color: #FF500D;
+}

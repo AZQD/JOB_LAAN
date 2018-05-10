@@ -1,0 +1,9 @@
+body {  font-size: 9pt; background-color: #e6f2ff; margin-top: 10px; font-style: normal; line-height: 180%;}
+.kuan {  border: #01519f; border-style: solid; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px}
+.font {  font-size: 9pt; text-decoration: none; line-height: 180%}
+.linkfont {  font-size: 9pt; color: #006699; text-decoration: none; line-height: 180%}
+a.linkfont:hover {  font-size: 9pt; line-height: 180%; color: #F06000; text-decoration: underline}
+.textinput {  border: 1px #01519f solid;BACKGROUND: #ffffff;FONT-SIZE: 9pt; FONT-FAMILY: arial}
+.textinput2 {  border: 1px #EEF7FF solid;BACKGROUND: #EEF7FF;FONT-SIZE: 9pt ;color: #EEF7FF; FONT-FAMILY: arial}
+.textbotton {  border: 1px #01519f solid;BACKGROUND: #ffffff;FONT-SIZE: 9pt; FONT-FAMILY: arial}
+.jingfont {  font-size: 9pt; font-style: normal; text-decoration: none; line-height: 158%}

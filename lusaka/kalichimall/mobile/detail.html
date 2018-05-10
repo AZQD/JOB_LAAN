@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="detailTitle"></title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <!--<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <link rel="stylesheet" id="detailHref">
+    <script type="text/javascript">
+        $('#detailHref').attr('href', 'css/detail.css?v='+mathRandomResult);
+    </script>-->
+</head>
+<body>
+
+<section class="commonPopBox1" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="tipOffPopBox" id="tipOffPopBox" style="display: none;">
+    <div class="tipOffBox">
+        <img class="closeTipOff" src="image/detailPage/close.png" alt="">
+        <div class="">
+            <label id="labelDetail" for="detail"><span class="title">Detail</span><span class="tip">*</span></label>&nbsp;&nbsp;
+            <textarea name="" id="detail" cols="30" rows="10"></textarea>
+        </div>
+        <div class="content">
+            <span class="title">Cellphone</span><br/><input id="content" type="text" PLACEHOLDER="Your Cellphone Number">
+        </div>
+        <div class="submit">
+            <button class="submitBtn">Submit</button>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <aside class="row headerBox">
+        <div class="col-xs-4 col-sm-4 left"><img class="logo" src="image/index/logo.png"></div>
+        <div class="col-xs-4 col-sm-4 indexMiddle">
+            <!--<span class="address"></span>
+            <ul class="addressUl" style="display: none;">
+                &lt;!&ndash;<li class="addressLi">01</li>&ndash;&gt;
+            </ul>-->
+        </div>
+        <div class="col-xs-4 col-sm-4 right">
+            <img class="search" src="image/index/search.png">
+            <span class="logout" style="display: none;">Logout</span>
+        </div>
+    </aside>
+
+    <aside class="detailBox" style="margin-top: 2.5rem;">
+        <div class="row detail">
+            <!--detailLeft-->
+            <div class="col-xs-12 col-sm-12 detailLeft">
+
+                <!--显示手机号-->
+                <div class="row getPhone">
+                    <div class="col-xs-12 col-sm-12 left">
+                        <img class="leftImg" src="image/detailPage/cellphone.png"><span class="leftText"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 right">
+                        <span class="rightText">Login to get cellphone</span>
+                    </div>
+                </div>
+
+                <img class="headImg" src="" alt="" style="display: none;">
+                <h3 class="goodName"></h3>
+                <p class="attr"><span class="addressText"></span></p>
+                <div class="row goodDesc">
+                    <div class="col-xs-12 col-sm-12 goodDescLeft">
+                        <!--<div class="bigImg"><img class="bigImgPic" src="image/detailPage/bigImg1.png"></div>-->
+                        <div class="bigImg row">
+                            <a href="javascript:void(0);" class="newOrOld"></a>
+                            <a href="###" class="tipOff">Tip-off</a>
+                            <!--图片作为背景-->
+                            <!--<span class="bigImgPicWrap" style="position: relative;">
+                                <div class="bigImgPicWrapBg" style="display:none; width: 100%;height: 100%;line-height: 20.625rem;position: absolute;background: RGBA(0,0,0,0.4);">
+                                    <span style="color: #FF4720;font-size: 5.5rem;font-weight: bold;">offline</span>
+                                </div>
+                                <img class="bigImgPic" src="" style="opacity:0;visibility: hidden;">
+                            </span>-->
+                            <span class="bigImgPicWrap" style="position: relative;">
+                                <img id="lastBigPic" src="image/detailPage/lastPic.png" style="position: absolute;left: 0; top: 46%;z-index: 999;" alt="">
+                                <img id="nextBigPic" src="image/detailPage/nextPic.png" style="position: absolute;right: 0; top: 46%;z-index: 999;" alt="">
+                                <div class="bigImgPicWrapBg" style="display:none; width: 100%;height: 100%;position: absolute;background: RGBA(0,0,0,0.4);z-index: 9;padding-top: 5.625rem;">
+                                    <span style="color: #FF4720;font-size: 5.5rem;font-weight: bold;">offline</span>
+                                </div>
+                                <img class="bigImgPic" style="">
+                            </span>
+                            <img style="display: none;" class="bigImgbg" src="image/detailPage/bigImgbg.png"/>
+                            <span class="bgColor"><span class="bgColorInner"></span></span>
+                            <div class="col-xs-5 col-sm-5 aboutPrice"><span class="thePrice" style="display: none;"><span class="thePriceNum"></span>ZMW</span></div>
+                            <div class="col-xs-9 col-sm-9 aboutShare">
+                                <a href="javascript:void(0);" class="btnLink btn2 btn3"><img class="likeImg"/>&nbsp;<span></span></a>&nbsp;
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=编码后的跳转地址&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="social_flat_rounded_rects_svg/Facebook.svg"></a>
+                                <a href="https://twitter.com/intent/tweet?source=编码后的跳转地址&text=分享文本" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="social_flat_rounded_rects_svg/Twitter.svg"></a>
+                                <a href="https://plus.google.com/share?url=编码后的跳转地址" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Google+" src="social_flat_rounded_rects_svg/Google+.svg"></a>
+                            </div>
+                        </div>
+                        <div class="littleImg row">
+                            <div class="leftFlag"><img src="image/detailPage/leftFlag.png"></div>
+                            <div class="col-xs-12 col-sm-12 img_ulBox">
+                                <ul class="img_ul">
+                                    <!--<li class="img_li">
+                                        <img src="image/detailPage/littleImg1.png">
+                                    </li>
+                                    <li class="img_li">
+                                        <img src="image/detailPage/littleImg1.png">
+                                    </li>
+                                    <li class="img_li">
+                                        <img src="image/detailPage/littleImg1.png">
+                                    </li>-->
+                                </ul>
+                            </div>
+                            <div class="rightFlag"><img src="image/detailPage/rightFlag.png"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row tabToggle">
+                    <a href="###" class="col-xs-6 col-sm-6 tabLink active">DETAIL</a>
+                    <a href="###" class="col-xs-6 col-sm-6 tabLink tabLink2">COMMENTS</a>
+                </div>
+                <div class="aboutContent" id="detailContent" style="display: none;"></div>
+                <div class="aboutContent" id="commentsContent" style="display: none;">
+
+                    <!--facebook发布评论-->
+                    <!--<div class="fb-comments row" data-href="http://www.kalichimall.com:81/detail.html?id=254"></div>-->
+                    <!--<div class="fb-comments row" id="fackbookNeedId"></div>
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id
+
+                                = id;
+                        js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v2.8&appId=612348248960723";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>-->
+                    <div id="disqus_thread"></div>
+                    <script>
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://kalichimall.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            /*下面这行代码在opera mini不兼容*/
+//                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <aside class="row infos">
+        <div class="col-xs-6 col-sm-6 part detailPublish"><span>Publish</span></div>
+        <div class="col-xs-6 col-sm-6 part detailSignInUp" style="display: block;"><span>Sign in/Sign up</span></div>
+        <div class="col-xs-6 col-sm-6 part detailProfile" style="display: none;"><span>My Home</span></div>
+    </aside>
+
+
+
+
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" id="detailFun"></script>
+<script type="text/javascript">
+    $('#detailFun').attr('src', 'js/detail.js?v='+mathRandomResult);
+</script>
+</body>
+</html>

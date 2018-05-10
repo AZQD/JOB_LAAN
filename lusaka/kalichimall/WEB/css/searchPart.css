@@ -1,0 +1,50 @@
+/*searchBox*/
+.searchBox .search{
+    width:1200px;
+    height:100px;
+    line-height:100px;
+    margin:0 auto;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+}
+.searchBox .search .searchLeft .logo{
+    cursor: pointer;
+    padding-left:16px;
+    width: 325px;
+    height: 51px;
+}
+.searchBox .search .searchLeft .change{
+    text-decoration: underline;
+}
+.searchBox .search .searchRight{
+    text-align: right;
+}
+.searchBox .search .searchRight .ipt{
+    width: 310px;
+    height: 35px;
+    line-height:35px;
+    font-size: 13px;
+    outline: none;
+    text-indent: 10px;
+    letter-spacing: 0;
+    border: 1px solid #FF4720;
+}
+.searchBox .search .searchRight .searchImg{
+    cursor: pointer;
+    width:70px;
+    margin-left:-6px;
+}
+.searchBox .search .searchRight .searchBtn{
+    width: 127px;
+    height: 35px;
+    line-height:35px;
+    color: #fff;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: #FF4720;
+    margin-right:42px;
+    position: relative;
+    top:1px;
+}

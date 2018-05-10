@@ -1,0 +1,203 @@
+/*rulesBox*/
+.rulesBox {
+  font-size: 1rem;
+  color: #1E1E1E;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  padding-bottom: 3.75rem;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 0.3125rem rgba(0, 0, 0, 0.34901961);
+}
+.rulesBox .part2 {
+  float: right;
+}
+/**/
+.showNowPrizeBox {
+  position: relative;
+  background: url("../image/pointsLottery/showPrizeBg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.showNowPrizeBox .prize {
+  position: absolute;
+  left: 0.25rem;
+  top: 0.1875rem;
+  width: 2.25rem;
+}
+.showNowPrizeBox .togglePrize {
+  position: absolute;
+  right: 0.375rem;
+  top: 0.375rem;
+  width: 1.625rem;
+}
+.showNowPrizeBox #nowPrize {
+  overflow: hidden;
+  height: 2.5rem;
+  padding-left: 2.875rem;
+  width: 100%;
+}
+.showNowPrizeBox #nowPrize .adList .tips {
+  font-size: 0.875rem;
+  color: #1E1E1E;
+  padding: 0.3125rem 0;
+  height: 2.5rem;
+}
+.showNowPrizeBox #nowPrize .adList .tips .msg {
+  font-size: 0.75rem;
+  color: #1E1E1E;
+  overflow: hidden;
+  border: 1px solid #ff9966;
+  padding: 0.125rem 0.3125rem;
+  border-radius: 0.375rem;
+  margin-left: 0.125rem;
+}
+.showNowPrizeBox #nowPrize .adList .tips .name {
+  color: #f60;
+}
+.showNowPrizeBox #nowPrize .headImg {
+  width: 1.75rem;
+  display: inline-block;
+  vertical-align: -0.125rem;
+}
+/*prizeBox*/
+.prizeBox {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+}
+.prizeBox .prizeUl {
+  text-align: center;
+  border: 0.125rem solid #ff4720;
+  border-radius: 0.3125rem;
+}
+.prizeBox .prizeUl .tips {
+  font-size: 0.875rem;
+  color: #1E1E1E;
+  padding: 0.3125rem 0;
+  height: 2.5rem;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.prizeBox .prizeUl .tips:last-child {
+  border-bottom: 0;
+}
+.prizeBox .prizeUl .tips .msg {
+  font-size: 0.75rem;
+  color: #1E1E1E;
+  overflow: hidden;
+  padding: 0.125rem 0.3125rem;
+  margin-left: 0.125rem;
+  border-left: 1px solid #FF4720;
+  padding-left: 1rem;
+}
+.prizeBox .prizeUl .tips .name {
+  color: #f60;
+}
+.prizeBox .prizeUl .headImg {
+  width: 1.75rem;
+  display: inline-block;
+  vertical-align: -0.125rem;
+  margin-right: 1rem;
+}
+/*rankListBox*/
+.rankListBox .part {
+  padding: 0 0.1875rem;
+}
+.rankListBox .left {
+  border-right: 1px solid #E9BBBB;
+}
+.rankListBox .part .title {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #FF6600;
+  text-align: center;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+  border: 0.125rem solid #ff4720;
+  margin: 0.25rem 0;
+}
+.rankListBox .part .rankList {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 0.375rem;
+  margin-bottom: 0.125rem;
+}
+.rankListBox .part .rankList1 {
+  background-color: #FFDBC9;
+}
+.rankListBox .part .rankList2 {
+  background-color: #FFEBE0;
+}
+.rankListBox .part .rankList3 {
+  background-color: #FFF5F0;
+}
+.rankListBox .part .rankList4 {
+  border-radius: 0;
+  border-top: 1px dotted #666;
+  border-bottom: 1px dotted #666;
+}
+.rankListBox .part .rankList5 {
+  border-radius: 0;
+  border-bottom: 1px dotted #666;
+}
+.rankListBox .part .rankList .rankHead {
+  width: 2.25rem;
+  vertical-align: -0.4375rem;
+}
+.rankListBox .part .rankList4 .rankHead,
+.rankListBox .part .rankList5 .rankHead {
+  width: 1.875rem;
+  vertical-align: -0.4375rem;
+}
+.rankListBox .part .rankList .rank {
+  color: #FF6600;
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding-left: 0.125rem;
+}
+.rankListBox .part .rankList4 .rank,
+.rankListBox .part .rankList5 .rank {
+  color: #FF6600;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 0.4375rem;
+}
+.rankListBox .part .rankList .name {
+  font-size: 1.125rem;
+  color: #666666;
+  text-decoration: underline;
+}
+.rankListBox .part .rankList .pointNum {
+  font-size: 1.125rem;
+  color: #FF8534;
+  font-weight: bold;
+}
+.rankListBox .part .rankList4 .pointNum,
+.rankListBox .part .rankList5 .pointNum {
+  font-size: 1rem;
+  color: #FF8534;
+  font-weight: bold;
+}
+/*infos*/
+.infos {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 1.25rem #333333;
+}
+.infos .part {
+  font-size: 0.875rem;
+  padding: 0.625rem 0;
+  color: #fff;
+  text-align: center;
+  background-color: #FF4720;
+  font-weight: bold;
+}
+.infos .pointsLotteryPublish {
+  background: #ff4720 url("../image/index/borderWhite.png") no-repeat right top;
+  background-size: 1px 100%;
+}
+.infos .part span {
+  text-decoration: underline;
+}

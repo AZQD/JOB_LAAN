@@ -1,0 +1,341 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="detailTitle"></title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/viewer.min.css">
+    <link rel="stylesheet" href="css/headerBox.css">
+    <link rel="stylesheet" href="css/bottomBox.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+<section class="commonPopBox" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="tipOffPopBox" id="tipOffPopBox" style="display: none;">
+<div class="tipOffBox">
+    <div class="">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="labelDetail" for="detail"><span class="title">Detail</span><span class="tip">*</span></label>&nbsp;&nbsp;
+        <textarea name="" id="detail" cols="30" rows="10"></textarea>
+    </div>
+    <div class="content">
+        <span class="title">Cellphone</span>&nbsp;&nbsp;&nbsp;&nbsp;<input id="content" type="text" PLACEHOLDER="Your Cellphone Number">
+    </div>
+    <div class="submit">
+        <button class="submitBtn">Submit</button>
+    </div>
+</div>
+</section>
+<section class="container-fluid">
+
+    <aside class="headerBox">
+        <div class="row header">
+            <div class="col-xs-6 col-sm-6 headerLeft">
+                <span class="lusaka"><!--Lusaka--></span>&nbsp;
+                <span class="change">[Change]</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight1" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="space login">Sign in</span>|
+                <span class="space register">Sign up</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight2" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="headImgBox"><img src="" class="headImg" style="display: none;"><span class="space name"></span>|</span>
+                <span class="space profile">My profile</span>|
+                <span class="space logout">logout</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <ul class="changeUl" style="display: none;">
+                <!--<li class="changeLi"><a href="#" class="changeLiLink">Lusaka1</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka2</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka3</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka4</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka5</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka6</a></li>-->
+            </ul>
+        </div>
+    </aside>
+
+    <aside class="searchBox row">
+        <div class="row search col-xs-12 col-sm-12">
+            <div class="col-xs-6 col-sm-6 searchLeft">
+                <a href="#" class="fist">HOME</a>
+                <img  class="gt" src="image/detailPage/gt.png">
+                <a href="#" class="second"></a>
+            </div>
+            <div class="col-xs-6 col-sm-6 searchRight" style="position: relative;">
+                <input class="ipt" type="text" placeholder="What dou you need?">
+                <img class="searchImg" src="image/index/search.png">
+                <button class="searchBtn">PUBLISH</button>
+                <marquee style="position: absolute;left: 50px;bottom: 6px;width: 507px;height: 20px;line-height: 20px;" id="aboutmarquee"></marquee>
+            </div>
+            <ul class="menuUl" style="display: none;">
+                <!--<li class="menuLi">
+                    <a href="#" class="menuLiLink">phone1</a>
+                    <ul class="twoUl" style="display: none;">
+                        <li class="twoLi"><a href="###" class="twoLiLink">11</a></li>
+                        <li class="twoLi"><a href="###" class="twoLiLink">11</a></li>
+                    </ul>
+                </li>
+                <li class="menuLi">
+                    <a href="#" class="menuLiLink">phone2</a>
+                    <ul class="twoUl" style="display: none;">
+                        <li class="twoLi"><a href="###" class="twoLiLink">22</a></li>
+                        <li class="twoLi"><a href="###" class="twoLiLink">22</a></li>
+                    </ul>
+                </li>
+                <li class="menuLi">
+                    <a href="#" class="menuLiLink">phone3</a>
+                    <ul class="twoUl" style="display: none;">
+                        <li class="twoLi"><a href="###" class="twoLiLink">33</a></li>
+                        <li class="twoLi"><a href="###" class="twoLiLink">33</a></li>
+                    </ul>
+                </li>
+                <li class="menuLi">
+                    <a href="#" class="menuLiLink">phone4</a>
+                    <ul class="twoUl" style="display: none;">
+                        <li class="twoLi"><a href="###" class="twoLiLink">44</a></li>
+                        <li class="twoLi"><a href="###" class="twoLiLink">44</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+        </div>
+    </aside>
+
+    <aside class="detailBox">
+        <div class="row detail">
+            <!--detailLeft-->
+            <div class="col-xs-9 col-sm-9 detailLeft">
+                <a href="###" class="tipOff">Tip-off</a>
+                <h3 class="goodName">iPhone 5s,  More Info Here</h3>
+                <div class="row goodDesc">
+                    <div class="col-xs-7 col-sm-7 goodDescLeft">
+                        <!--<div class="bigImg"><img class="bigImgPic" src="image/detailPage/bigImg1.png"></div>-->
+                        <div class="bigImg" style="position: relative;">
+                            <img id="lastBigPic" src="image/detailPage/lastPic.png" style="width: 40px; position: absolute;left: 0; top: calc(50% - 40px);z-index: 999;" alt="">
+                            <img id="nextBigPic" src="image/detailPage/nextPic.png" style="width: 40px; position: absolute;right: 0; top: calc(50% - 40px);z-index: 999;" alt="">
+                            <div class="bigImgPicWrapBg" style="display:none; width: 100%;height: 100%;line-height: 20.625rem;position: absolute;background: RGBA(0,0,0,0.4);">
+                                <span style="color: #FF4720;font-size: 5.5rem;font-weight: bold;">offline</span>
+                            </div>
+                            <img style="" class="bigImgPic" >
+                        </div>
+                        <div class="littleImg row">
+                            <div class="col-xs-2 col-sm-2 leftFlag"><img src="image/detailPage/leftFlag.png"></div>
+                            <div class="img_ulBox">
+                                <ul class="col-xs-8 col-sm-8 img_ul">
+                                    <!--<li class="img_li">
+                                        <img src="image/detailPage/littleImg1.png">
+                                    </li>
+                                    <li class="img_li">
+                                        <img src="image/detailPage/littleImg1.png">
+                                    </li>
+                                    <li class="img_li">
+                                        <img src="image/detailPage/littleImg1.png">
+                                    </li>-->
+                                </ul>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 rightFlag"><img src="image/detailPage/rightFlag.png"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 col-sm-5 goodDescRight">
+                        <p class="attr attr1">&nbsp;&nbsp;&nbsp;Price&nbsp;:<span id="mianYi"><span class="num1 price"></span>&nbsp;<span class="num2 aboutNum" style="display: none;">ZMW</span></span></p>
+                        <p class="attr">&nbsp;&nbsp;&nbsp;&nbsp;View&nbsp;:<span class="view"></span></p>
+                        <p class="attr">Quality&nbsp;:<span class="quality"></span></p>
+                        <p class="attr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add&nbsp;:<span class="address"></span></p>
+                        <div class="userBtn">
+                            <div class="row getPhone">
+                                <div class="col-xs-6 col-sm-6 left">
+                                    <img class="leftImg" src="image/detailPage/cellphone.png"><span class="leftText"></span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 right">
+                                    <span class="rightText">Login to get cellphone</span>
+                                </div>
+                            </div>
+                            <ul class="share-buttons">
+                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=编码后的跳转地址&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+                                <li><a href="https://twitter.com/intent/tweet?source=编码后的跳转地址&text=分享文本" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+                                <li><a href="https://plus.google.com/share?url=编码后的跳转地址" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Google+" src="social_flat_rounded_rects_svg/Google+.svg"></a></li>
+
+                            </ul>
+                            <!--<a href="#" class="btnLink btn1">BUY IT</a>-->
+                            <!--<a href="#" class="btnLink btn2">SHARE</a>-->
+                            <!--<a href="#" class="btnLink btn2"><img class="likeImg" src="image/detailPage/share.png">SHARE</a><br/>-->
+                            <a href="javascript:void(0);" class="btnLink btn2 btn3"><img class="likeImg"/><span></span></a>
+                            <!--<a href="#" class="btnLink btn2 btn3 btn4"><img class="likeImg" src="image/detailPage/remove.png">&nbsp;Remove</a>-->
+                            <!--<a href="#" class="btnLink btn2 btn3"><img class="likeImg" src="image/detailPage/bad.png">&nbsp;99</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="tabToggle">
+                    <a href="###" class="tabLink active">DETAIL</a><a href="###" class="tabLink tabLink2">COMMENTS</a>
+                </div>
+                <div class="aboutContent" id="detailContent" style="display: none;"></div>
+                <div class="aboutContent" id="commentsContent" style="display: none;">
+
+                    <!--facebook发布评论-->
+                    <!--<div class="fb-comments row" data-href="http://www.kalichimall.com:81/detail.html?id=254"></div>-->
+                    <!--<div class="fb-comments row" id="fackbookNeedId"></div>
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id
+
+                                = id;
+                        js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v2.8&appId=612348248960723";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>-->
+
+                    <!--.detailBox .detail .detailLeft .aboutContent-->
+                    <div id="disqus_thread"></div>
+                    <script>
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://kalichimall.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+                </div>
+            </div>
+            <!--detailRight-->
+            <div class="col-xs-3 col-sm-3 detailRight">
+                <div class="userInfo">
+                    <div class="col-xs-12 col-sm-12 headImg">
+                        <!--<img src="image/detailPage/headImg.png">-->
+                        <img class="userInfoImg" src="" style="display: none;">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 name">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-12 talk" style="visibility: hidden;">
+                        <a href="###" class="goHome"></a>
+                    </div>
+                </div>
+                <div class="row selling">
+                    <p class="col-xs-12 col-sm-12 sellingTitle"><span class="gang">|</span><span class="">PUBLISHED (<span id="publishNum"></span>)</span></p>
+                    <div class="sellingListBox" id="dowebok">
+                        <!--<div class="col-xs-6 col-sm-6 sellingList"><img class="sellingImg" src="image/detailPage/selling1.jpg"></div>
+                        <div class="col-xs-6 col-sm-6 sellingList"><img class="sellingImg" src="image/detailPage/selling1.jpg"></div>
+                        <div class="col-xs-6 col-sm-6 sellingList"><img class="sellingImg" src="image/detailPage/selling1.jpg"></div>
+                        <div class="col-xs-6 col-sm-6 sellingList"><img class="sellingImg" src="image/detailPage/selling1.jpg"></div>-->
+                    </div>
+                    <div class="col-xs-12 col-sm-12 more" style="display: none;"><a href="###" class="moreLink">MORE</a></div>
+                </div>
+                <!--<div class="row recommend">
+                    <p class="col-xs-12 col-sm-12 recommendTitle"><span class="gang">|</span><span class="">精选推荐</span></p>
+                    <div class="recommendListBox">
+                        <div class="col-xs-12 col-sm-12 recommendList">
+                            <div class="col-xs-6 col-sm-6 recommendListLeft">
+                                <img src="image/detailPage/recommend1.png">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 recommendListRight">
+                                <p class="desc">美的智能变频空调美的智能变频空调</p>
+                                <p class="price"><span class="num1">2800</span>&nbsp;<span class="num2">元</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 recommendList">
+                            <div class="col-xs-6 col-sm-6 recommendListLeft">
+                                <img src="image/detailPage/recommend1.png">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 recommendListRight">
+                                <p class="desc">美的智能变频空调美的智能变频空调</p>
+                                <p class="price"><span class="num1">2800</span>&nbsp;<span class="num2">元</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 recommendList">
+                            <div class="col-xs-6 col-sm-6 recommendListLeft">
+                                <img src="image/detailPage/recommend1.png">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 recommendListRight">
+                                <p class="desc">美的智能变频空调美的智能变频空调</p>
+                                <p class="price"><span class="num1">2800</span>&nbsp;<span class="num2">元</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 recommendList">
+                            <div class="col-xs-6 col-sm-6 recommendListLeft">
+                                <img src="image/detailPage/recommend1.png">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 recommendListRight">
+                                <p class="desc">美的智能变频空调美的智能变频空调</p>
+                                <p class="price"><span class="num1">2800</span>&nbsp;<span class="num2">元</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 recommendList">
+                            <div class="col-xs-6 col-sm-6 recommendListLeft">
+                                <img src="image/detailPage/recommend1.png">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 recommendListRight">
+                                <p class="desc">美的智能变频空调美的智能变频空调</p>
+                                <p class="price"><span class="num1">2800</span>&nbsp;<span class="num2">元</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 recommendList">
+                            <div class="col-xs-6 col-sm-6 recommendListLeft">
+                                <img src="image/detailPage/recommend1.png">
+                            </div>
+                            <div class="col-xs-6 col-sm-6 recommendListRight">
+                                <p class="desc">美的智能变频空调美的智能变频空调</p>
+                                <p class="price"><span class="num1">2800</span>&nbsp;<span class="num2">元</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </aside>
+
+    <!--<aside class="bottomBox">
+        <div class="row bottom">
+            <div class="col-xs-12 col-sm-12 bottomLink">
+                <a href="#">Contact Us</a>|<a href="#">Privacy Notice</a>|<a href="#">Conditions of Use</a>
+            </div>
+            <div class="col-xs-12 col-sm-12 bottomCopyRight">
+                <div class="bottomCopyRightText">
+
+                    <span class="copy">Copyright © 2017 <a href="###" class="copyLink">kalichimall.com</a> All Right Reserved</span>
+                    &lt;!&ndash;&emsp;<a href="#" class="contact">Contact Us</a>&ndash;&gt;
+                </div>
+            </div>
+        </div>
+    </aside>-->
+    <iframe id="footerIframe" src="footer.html" frameborder="0"></iframe>
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/viewer.min.js"></script>
+<!--<script type="text/javascript" src="js/headerBox.js"></script>-->
+<!--<script type="text/javascript" src="js/searchBoxLeft.js"></script>-->
+<!--<script type="text/javascript" src="js/searchBoxRight.js"></script>-->
+<script type="text/javascript" id="headerBoxFun"></script>
+<script type="text/javascript" id="searchBoxLeftFun"></script>
+<script type="text/javascript" id="searchBoxRightFun"></script>
+<script type="text/javascript" id="detailFun"></script>
+<script type="text/javascript">
+    $('#headerBoxFun').attr('src', 'js/headerBox.js?v='+mathRandomResult);
+    $('#searchBoxLeftFun').attr('src', 'js/searchBoxLeft.js?v='+mathRandomResult);
+    $('#searchBoxRightFun').attr('src', 'js/searchBoxRight.js?v='+mathRandomResult);
+    $('#detailFun').attr('src', 'js/detail.js?v='+mathRandomResult);
+</script>
+</body>
+</html>

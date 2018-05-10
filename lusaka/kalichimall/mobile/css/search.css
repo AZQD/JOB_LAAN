@@ -1,0 +1,130 @@
+/*searchBox*/
+.searchBox {
+  margin: 0 auto;
+  font-size: 0.875rem;
+  color: #666;
+  background-color: #fff;
+  margin-top: 5.3125rem;
+  margin-bottom: 2.8125rem;
+}
+.searchBox .search .searchWrap {
+  width: 16.875rem;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 2.25rem;
+  height: 2.125rem;
+}
+.searchBox .search .ipt {
+  width: 12.5rem;
+  padding: 0.4375rem;
+  font-size: 0.8125rem;
+  outline: none;
+  text-indent: 0.625rem;
+  letter-spacing: 0;
+  border: 1px solid #FF4720;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2.125rem;
+}
+.searchBox .search .searchBtn {
+  width: 4.375rem;
+  padding: 0.4375rem 0;
+  color: #fff;
+  font-size: 0.8125rem;
+  outline: none;
+  background: url("../image/index/search2.png") no-repeat center center;
+  background-size: 4.375rem 2.1875rem;
+  position: absolute;
+  left: 12.5rem;
+  top: 0;
+  border: none;
+  height: 2.125rem;
+}
+/*bestGoods*/
+.bestGoods {
+  padding-top: 0.375rem;
+  padding-bottom: 0.625rem;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+}
+.bestGoods .bestGoodsTitle {
+  height: 1.375rem;
+  position: relative;
+  margin-bottom: 0.625rem;
+  border-bottom: 1px solid #333333;
+}
+.bestGoods .bestGoodsTitle span {
+  position: absolute;
+  left: 0;
+  top: 0.0625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-bottom: 0.125rem solid #ff4720;
+}
+.bestGoods .imgsBox {
+  cursor: pointer;
+  position: relative;
+  min-height: 4.875rem;
+  width: 100%;
+}
+.bestGoods .imgsBox .imgBox {
+  width: 23%;
+  height: 4.6875rem;
+  margin: 0 1%;
+  padding: 0 0.5rem;
+}
+.bestGoods .imgsBox .imgBox img {
+  width: 100%;
+}
+/*H5页面 绝对定位元素被软键盘弹出时顶起*/
+@media (max-height: 400px) {
+  .bestGoods {
+    display: none;
+  }
+}
+/*classifyBox*/
+.classifyBox {
+  margin-bottom: 7.875rem;
+  position: relative;
+  left: 1rem;
+}
+.classifyBox .classifyLi .firstName {
+  text-align: right;
+  padding-right: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+.classifyBox .classifyLi .secondNames {
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  color: #666;
+  border-left: 1px solid #999;
+}
+.classifyBox .classifyLi .secondNames .secondName {
+  height: 2rem;
+  line-height: 2rem;
+  padding-right: 0.625rem;
+  text-decoration: underline;
+}
+/*
+!*classifyBox*!
+.classifyBox{
+  background-color: #fff;
+}
+.classifyBox .eachClass{
+  font-size: 0.875rem;
+  color: #666;
+  //height: 2rem;
+  line-height: 2rem;
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+.classifyBox .eachClass .eachClassName{
+  padding-left: 0.625rem;
+  text-decoration: underline;
+}*/

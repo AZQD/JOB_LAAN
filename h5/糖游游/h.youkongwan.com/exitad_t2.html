@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exit ad</title>
+    
+    <meta name="description" content="online game, html game, h5 game, iOS game, android game">
+    <meta name="author" content="youkongwan.com">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    
+    <style>
+    	html,
+		body {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		
+			width: 100%;
+			height: 100%;
+		
+			scroll:no;
+		
+			font-family: Arial, Verdana;
+		}
+	
+		.container {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-color: #DADADA;
+			overflow: hidden;
+		}
+	
+	
+		.closeImg {
+			width:40px;
+			height:40px;
+			position:absolute;
+			right:2px;
+		}
+	
+		.ad {
+			width: 100%;
+			height: 100%;
+			
+			#border:1px solid #DADADA
+		}
+	
+	
+		.ad img {
+			width:100%;
+			height:100%;
+		}
+		
+		.bottomBar {
+			width: 100%;
+			height: 38;
+			position:absolute; 
+			bottom:0px;
+		}
+
+		.exitbutton {
+			-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+			-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+			box-shadow:inset 0px 1px 0px 0px #ffffff;
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+			background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+			background-color:#ededed;
+			-webkit-border-top-left-radius:6px;
+			-moz-border-radius-topleft:6px;
+			border-top-left-radius:6px;
+			-webkit-border-top-right-radius:6px;
+			-moz-border-radius-topright:6px;
+			border-top-right-radius:6px;
+			-webkit-border-bottom-right-radius:6px;
+			-moz-border-radius-bottomright:6px;
+			border-bottom-right-radius:6px;
+			-webkit-border-bottom-left-radius:6px;
+			-moz-border-radius-bottomleft:6px;
+			border-bottom-left-radius:6px;
+			text-indent:0;
+			border:1px solid #dcdcdc;
+			display:inline-block;
+			color:#777777;
+			font-family:Arial;
+			font-size:15px;
+			font-weight:bold;
+			font-style:normal;
+			height:35px;
+			line-height:35px;
+			width:92px;
+			text-decoration:none;
+			text-align:center;
+			text-shadow:1px 1px 0px #ffffff;
+		}
+		.exitbutton:hover {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+			background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+			background-color:#dfdfdf;
+		}.exitbutton:active {
+			position:relative;
+			top:1px;
+		}
+		
+		.continuebutton {
+			-moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+			-webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+			box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52) );
+			background:-moz-linear-gradient( center top, #b8e356 5%, #a5cc52 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52');
+			background-color:#b8e356;
+			-webkit-border-top-left-radius:6px;
+			-moz-border-radius-topleft:6px;
+			border-top-left-radius:6px;
+			-webkit-border-top-right-radius:6px;
+			-moz-border-radius-topright:6px;
+			border-top-right-radius:6px;
+			-webkit-border-bottom-right-radius:6px;
+			-moz-border-radius-bottomright:6px;
+			border-bottom-right-radius:6px;
+			-webkit-border-bottom-left-radius:6px;
+			-moz-border-radius-bottomleft:6px;
+			border-bottom-left-radius:6px;
+			text-indent:0;
+			border:1px solid #83c41a;
+			display:inline-block;
+			color:#333333;
+			font-family:Arial;
+			font-size:15px;
+			font-weight:bold;
+			font-style:normal;
+			height:35px;
+			line-height:35px;
+			width:130px;
+			text-decoration:none;
+			text-align:center;
+			text-shadow:1px 1px 0px #86ae47;
+		}
+		.continuebutton:hover {
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356) );
+			background:-moz-linear-gradient( center top, #a5cc52 5%, #b8e356 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356');
+			background-color:#a5cc52;
+		}.continuebutton:active {
+			position:relative;
+			top:1px;
+		}
+    </style>
+    
+    
+    <script src="candyoyoad.js"></script>
+    <!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script-->
+
+    <script>
+    	
+    	(function() {
+			var urlParameters = new Object();
+			var url = location.search; //获取url中"?"符后的字串 
+			if (url.indexOf("?") != -1) { 
+				var str = url.substr(1); 
+				strs = str.split("&"); 
+				for(var i = 0; i < strs.length; i ++) { 
+					urlParameters[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]); 
+				} 
+			}
+			
+			document.reviveZoneID = urlParameters["reviveZoneID"];
+			document.reviveAdName = urlParameters["reviveAdName"];
+		})();
+		
+  	</script>
+  </head>
+  <body id="main">
+
+<div class="container" id="contentMain">
+	<div id="exitBtns_" class="bottomBar">
+		<div style="position:absolute; left:5px; bottom:2px;" onclick="toExit()" >
+			<a class="exitbutton">Exit</a>
+		</div>
+		
+		<div style="position:absolute; right:5px; bottom:2px;" onclick="toClose()">
+			<a class="continuebutton">Continue</a>
+		</div>
+	</div>
+	
+	<div id="adC_" class="ad" onclick="toOpen()">
+		<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://revive.youkongwan.cn/www/delivery/ajs.php':'http://revive.youkongwan.cn/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=" + document.reviveZoneID);
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>-->
+	</script>
+	</div>
+</div>
+</body>
+
+<script>
+	init(document.reviveAdName, null, null, null, null);
+</script>
+</html>

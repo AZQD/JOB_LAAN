@@ -1,0 +1,375 @@
+body{
+    overflow: auto;
+    /*background-color: #E9E9E9;*/
+}
+
+/*searchBox*/
+.searchBox .search{
+    width:1200px;
+    height:100px;
+    line-height:100px;
+    margin:0 auto;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+}
+.searchBox .search .searchLeft .logo{
+    cursor: pointer;
+    padding-left:16px;
+    width: 325px;
+    height: 51px;
+}
+.searchBox .search .searchLeft .change{
+    text-decoration: underline;
+}
+.searchBox .search .searchRight{
+    text-align: right;
+}
+.searchBox .search .searchRight .ipt{
+    width: 310px;
+    height: 35px;
+    line-height:35px;
+    font-size: 13px;
+    outline: none;
+    text-indent: 10px;
+    letter-spacing: 0;
+    border: 1px solid #FF4720;
+}
+.searchBox .search .searchRight .searchImg{
+    cursor: pointer;
+    width:70px;
+    margin-left:-6px;
+}
+.searchBox .search .searchRight .searchBtn{
+    width: 127px;
+    height: 35px;
+    line-height:35px;
+    color: #fff;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: #FF4720;
+    margin-right:42px;
+    position: relative;
+    top:1px;
+}
+
+/*sortBox*/
+.sortBox{
+
+}
+.sortBox .sort{
+    width:1200px;
+    margin:0 auto;
+    padding: 50px 90px 0 90px;
+}
+.sortBox .sort .part{
+    width: 300px;
+    height: 30px;
+    line-height:30px;
+    color: #333333;
+    font-size: 14px;
+    border-bottom: 2px solid #999999;
+}
+.sortBox .sort .space{
+    margin-right: 60px;
+}
+.sortBox .sort .active{
+    border-bottom: 2px solid #FF4720;
+}
+.sortBox .sort .space .left{
+    display: inline-block;
+    width: 50%;
+}
+.sortBox .sort .space .left .categoryName{
+    font-family: Arial,sans-serif;
+}
+.sortBox .sort .space .changeCid{
+    cursor: pointer;
+}
+.sortBox .sort .space .right{
+    display: inline-block;
+    width: 50%;
+    color: #FF4720;
+    text-decoration: underline;
+    text-align: right;
+}
+.sortBox .sort .partInner1{
+    margin-top: 54px;
+    padding-top:20px;
+}
+.sortBox .sort .partInner1 .partInner1Left{
+    border-right: 1px solid #999;
+    font-size: 24px;
+    font-weight:bold;
+    text-align: right;
+    padding-right: 26px;
+}
+.sortBox .sort .partInner1 .partInner1Left .title{
+    cursor: pointer;
+    color: #999;
+    padding-top:12px;
+    font-weight: bold;
+}
+.sortBox .sort .partInner1 .partInner1Left .isActive{
+    color: #333;
+}
+.sortBox .sort .partInner1 .partInner1Right{
+    padding-top: 22px;
+}
+.sortBox .sort .partInner1 .partInner1Right .secondCidName{
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-size: 14px;
+    padding-left: 48px;
+}
+
+.sortBox .sort .partInner2{
+    margin-top: 54px;
+}
+.sortBox .sort .partInner2 .partInner2Box{
+    padding-left: 130px;
+    /*background-color: #bfa;*/
+}
+.sortBox .sort .partInner2 .partInner2Box .left{
+    width: 190px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    height: 35px;
+    line-height:35px;
+    text-align: right;
+    padding-right: 27px;
+}
+.sortBox .sort .partInner2 .partInner2Box .right{
+    padding-bottom: 20px;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .btn{
+    display: inline-block;
+    width: 127px;
+    height: 35px;
+    line-height:35px;
+    color: #333;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #E6E6E6;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .active{
+    color: #fff;
+    background-color: #FF4720;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .priceText{
+    width: 127px;
+    height: 35px;
+    line-height:35px;
+    margin-right: 10px;
+    font-size: 13px;
+    border: 1px solid #999;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .titleText{
+    width: 100%;
+    height: 35px;
+    line-height:35px;
+    margin-right: 10px;
+    font-size: 13px;
+    border: 1px solid #999;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .location{
+    height: 35px;
+    width: 127px;
+    margin-right: 10px;
+    margin-top: 6px;
+    font-size: 13px;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .locationText{
+    width: 305px;
+    height: 35px;
+    line-height:35px;
+    font-size: 13px;
+    border: 1px solid #999;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .detailText{
+    width: 100%;
+    height: 133px;
+    font-size: 13px;
+    border: 1px solid #999;
+    onresize:none;
+    outline: none;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .imagesBox{
+    /*width: 150px;*/
+    height: 150px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .imagesBox .nowHaveImg{
+    border: 1px solid #999;
+    float: left;
+    margin-right: 16px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .imagesBox .nowHaveImg .closeNowHaveImg{
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .imagesBox .upload{
+    height: 30px;
+    line-height:30px;
+    background-color: #E6E6E6;
+}
+.sortBox .sort .partInner2 .partInner2Box .right .imagesBox .uploadLogo{
+    width: 88px;
+    height: 70px;
+    /*margin-top: 24px;*/
+}
+.sortBox .sort .partInner2 .partInner2Box .right .contactText{
+    width: 246px;
+    height: 35px;
+    line-height:35px;
+    font-size: 13px;
+    margin-right: 10px;
+    border: 1px solid #999;
+}
+.sortBox .sort .partInner2 .partInner2Box .publishBtn{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.sortBox .sort .partInner2 .partInner2Box .publishBtn .publishLink{
+    display: inline-block;
+    width: 127px;
+    height: 35px;
+    line-height:35px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #FF4720;
+}
+
+.sortBox .sort .partInner3{
+    text-align: center;
+}
+.sortBox .sort .partInner3 .complete{
+    padding-top: 60px;
+}
+.sortBox .sort .partInner3 .complete .completeImg{
+    width: 180px;
+    height: 180px;
+}
+.sortBox .sort .partInner3 .published{
+    color: #666666;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.sortBox .sort .partInner3 .completeBtn{
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+.sortBox .sort .partInner3 .completeBtn .completeLink{
+    display: inline-block;
+    width: 283px;
+    height: 35px;
+    line-height:35px;
+    color: #fff;
+    text-align: center;
+    background-color: #FF4720;
+}
+
+
+#selectCid{
+    width: 127px;
+    height: 35px;
+}
+
+
+/*a  upload */
+.a-upload {
+    border: 1px solid #999;
+    float: left;
+    margin-right: 16px;
+    width: 150px;
+    /*padding: 4px 10px;*/
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    /*border-radius: 4px;*/
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-bottom: 20px;
+}
+.a-upload .closeImg{
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+
+/*publishPopBox弹窗*/
+.publishPopBox{
+    position: absolute;
+    background-color: RGBA(0,0,0,0.6);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.publishPopBox .tipOffBox{
+    width: 372px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.publishPopBox .tipOffBox .title{
+    height: 37px;
+    line-height:37px;
+    padding-left: 12px;
+    font-size: 13px;
+    background-color: rgba(204, 204, 204, 1);
+}
+.publishPopBox .tipOffBox .detailTip{
+    text-align: justify;
+    padding:32px 40px;
+    font-size: 14px;
+}
+.publishPopBox .tipOffBox .confirmBox{
+    font-size: 13px;
+    padding:12px 40px;
+}
+.publishPopBox .tipOffBox .confirmBox .confirmBtn{
+    cursor: pointer;
+    width: 127px;
+    height: 35px;
+    line-height:35px;
+    background-color: rgba(255, 79, 13, 1);
+    color: #fff;
+    text-align: center;
+}
+.publishPopBox .tipOffBox .confirmBox .loginNowBtn{
+    margin-right: 36px;
+}

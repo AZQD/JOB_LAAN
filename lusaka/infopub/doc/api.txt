@@ -1,0 +1,479 @@
+HOST:http://www.kalichimall.com
+--------------------------------------------------------------------
+1、登录 (登录页面)
+/apigateway/login
+方法:POST
+输入:{"auth":"AUTH","timestamp":1497091791}
+其中AUTH生成方法参考如下
+AUTH=RSA(user=base64('user')&pass=base64('pass'))
+文件尾部有RSA公钥
+JS RSA加密参考项目
+https://github.com/travist/jsencrypt
+
+输出:
+	成功:
+		{"status":200,"msg":"","data":"{\"token\":\"fbbf20e4e3868be1eee62b0c21f56506\"}"}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+----------------------------------------------------------------------
+2、用户注册 (注册页面)
+/apigateway/reg
+方法:POST
+输入:{"reg":"REGDATA","timestamp":1497091791}
+REGDATA=RSA(user=base64('user')&pass=base64('pass')&nickname=base64('nickname'))
+输出:
+	成功:
+		{"status":200,"msg":"","data":"registration success"}
+	失败:
+		{"status":500,"msg":"error msg"}
+		
+----------------------------------------------------------------------	
+3、获得用户信息 (用户管理，所有要用到用户登录状态的页面)
+/apigateway/getuserinfo
+方法:POST
+输入:{"token":"token","timestamp":1497091791}
+token为登录成功后接口返回的token值
+输出:
+	成功:
+		{"status":200,"msg":"","data":"{\"phone\":\"18912341234\",\"sex\":0,\"last\":\"0000-00-00 00:00:00\",\"nickname\":\"\",\"username\":\"18912341234\",\"reg\":\"2017-06-10 21:58:24\",\"logo\":\"default.png\"}"}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+
+----------------------------------------------------------------------
+4、获得产品分类 (恩，需要用到分类的地方，比如首页，分类页，发布产品页要选择分类...)
+/apigateway/categorys
+方法:GET
+输出:
+	成功:
+		{"status":200,"msg":"","data":"[{\"cid\":2,\"id\":2,\"sub\":[{\"id\":6,\"main\":0,\"imgsrc\":\"\",\"name\":\"Sedan\",\"pid\":2},{\"id\":7,\"main\":0,\"imgsrc\":\"\",\"name\":\"SUV\",\"pid\":2}],\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/vehicles.png\",\"name\":\"Vehicles\"},{\"cid\":3,\"id\":3,\"sub\":[{\"id\":9,\"main\":0,\"imgsrc\":\"\",\"name\":\"Computer\",\"pid\":3},{\"id\":10,\"main\":0,\"imgsrc\":\"\",\"name\":\"Cellphone\",\"pid\":3},{\"id\":11,\"main\":0,\"imgsrc\":\"\",\"name\":\"Watch\",\"pid\":3}],\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/digtals.png\",\"name\":\"Digtals\"},{\"cid\":4,\"id\":4,\"sub\":[{\"id\":13,\"main\":0,\"imgsrc\":\"\",\"name\":\"Family House\",\"pid\":4},{\"id\":14,\"main\":0,\"imgsrc\":\"\",\"name\":\"Office\",\"pid\":4}],\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/buildings.png\",\"name\":\"Buildings\"},{\"cid\":5,\"id\":5,\"sub\":[{\"id\":16,\"main\":0,\"imgsrc\":\"\",\"name\":\"Clothes\",\"pid\":5},{\"id\":17,\"main\":0,\"imgsrc\":\"\",\"name\":\"Shoes\",\"pid\":5},{\"id\":18,\"main\":0,\"imgsrc\":\"\",\"name\":\"Furniture\",\"pid\":5}],\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/lifegoods.png\",\"name\":\"Life Goods\"},{\"cid\":1,\"id\":1,\"sub\":{},\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/others.png\",\"name\":\"Others\"}]"}
+	失败:
+		{"status":500,"msg":"error msg"}
+		
+
+---------------------------------------------------------------------
+5、获得区域信息 (这个应该不要说，强调一个地方---发布产品页，一，二，三级地址的区域ID)
+/apigateway/areas
+方法:GET
+输出:
+	成功:
+		{"status":200,"msg":"","data":"{\"Lusaka\":{\"sub\":{},\"name\":\"Lusaka\",\"id\":1},\"Kasama\":{\"sub\":{},\"name\":\"Kasama\",\"id\":8},\"Mufulira\":{\"sub\":{},\"name\":\"Mufulira\",\"id\":6},\"Chingola\":{\"sub\":{},\"name\":\"Chingola\",\"id\":5},\"Kabwe\":{\"sub\":{},\"name\":\"Kabwe\",\"id\":4},\"Chipata\":{\"sub\":{},\"name\":\"Chipata\",\"id\":9},\"Ndola\":{\"sub\":{},\"name\":\"Ndola\",\"id\":2},\"Livingstone\":{\"sub\":{},\"name\":\"Livingstone\",\"id\":7},\"Kitwe\":{\"sub\":{},\"name\":\"Kitwe\",\"id\":3}}"}
+	失败:
+		{"status":500,"msg":"error msg"}
+	
+
+----------------------------------------------------------------------
+6、发布产品
+/apigateway/pubgood
+方法:POST
+输入:
+	{
+		"token":"", 			//用户登录凭证，如果是匿名发布则留空""
+		"cid":"",				//产品分类ID
+		"issell":"",			//是否是出售，"1"为出售，"0"为需求
+		"goodstatus":"",		//产品新旧,"0","1","2","3","4","5"...
+		"price":"",				//价格
+		"title":"title",		//标题
+		"details":"details",	//产品详情
+		"addr_l1":"",			//一级地址 ID
+		"addr_l2":"",			//二级地址 ID
+		"addr_l3":"",			//三级地址 ID
+		"addr_l4":"",			//详细地址
+		"contactname":"name",	//联系人姓名
+		"phone":"phone",		//联系人手机
+		"imgs":""				//产品图片ID，图片ID通过图片上传接口获得,多个图片用逗号隔开
+	}
+输出:
+	成功:
+		{"status":200,"msg":""}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+----------------------------------------------------------------------
+7、获得指定产品的产品信息
+/apigateway/getgood?id=产品ID&action=browse
+方法:GET
+如果指定action=browse,则可以浏览已经下线和已经完成的商品
+输出:
+	成功:
+		{"status":200,"msg":"","data":"{\"wishs\":0,\"phone\":\"122334567\",\"id\":1,\"uid\":0,\"cimg\":\"\",\"price\":0,\"addr_l3\":null,\"goodstatus\":1,\"status\":0,\"views\":21,\"addr_l4\":null,\"pubtime\":\"06-07-2017 16:27\",\"cid\":4,\"addr_l1\":null,\"title\":null,\"contactname\":null,\"imgs\":\"\",\"details\":\"21221aaabbcc\",\"issell\":1,\"addr_l2\":null}"}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+----------------------------------------------------------------------
+8、产品列表查看
+/apigateway/getgoods
+方法:GET
+输入:
+	?cid=深层分类id&pmax=400&pmin=300&areaid=区域id&start=&n=&issell=0/1&goodstatus=0/1/2/3/4/5&orderby=price/date&sort=desc/asc
+	过滤条件:分类(cid)、价格区间(pmax,pmin)、区域(area)、是否是售卖(issell,等于1则是售卖(celler)，等于0则是需要(buyer), 默认是售卖)、商品新旧程度(0,1,2,3....)
+	
+	排序字段(orderby, price 按价格排序，date按时间排序)、排序方式(sort, desc降序、asc升序,  desc 降序 从上往下是降序, asc 升序 从上往下是升序)
+	分页:start=从第几条开始&n=获得几条数据，最多30条
+	所有参数非必须
+输出:
+	成功:
+		{"status":200,"msg":"","data":"[{\"price\":\"\",\"phone\":\"\",\"id\":9,\"status\":0,\"views\":3,\"addr_l4\":null,\"pubtime\":\"2017-05-31 00:31:14\",\"cid\":1,\"addr_l1\":null,\"uid\":0,\"addr_l3\":null,\"imgs\":\"\",\"details\":\"\",\"issell\":1,\"addr_l2\":null},{\"price\":\"\",\"phone\":\"\",\"id\":10,\"status\":0,\"views\":2,\"addr_l4\":null,\"pubtime\":\"2017-05-31 00:31:17\",\"cid\":1,\"addr_l1\":null,\"uid\":0,\"addr_l3\":null,\"imgs\":\"\",\"details\":\"\",\"issell\":1,\"addr_l2\":null},{\"price\":\"\",\"phone\":\"efefaef\",\"id\":11,\"status\":0,\"views\":2,\"addr_l4\":null,\"pubtime\":\"2017-05-31 00:31:19\",\"cid\":1,\"addr_l1\":null,\"uid\":0,\"addr_l3\":null,\"imgs\":\"\",\"details\":\"afef\",\"issell\":1,\"addr_l2\":null}]"}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+----------------------------------------------------------------------
+9、搜索
+/apigateway/search
+方法:GET
+输入：
+	?key=&start=&n=
+	key关键字
+	分页:start=从第几条开始&n=获得几条数据，最多30条
+	除key以外所有参数非必须
+输出:
+	成功:
+		{"status":200,"msg":"","data":"[{\"price\":\"\",\"phone\":\"18674813596\",\"id\":3,\"status\":0,\"views\":7,\"addr_l4\":null,\"pubtime\":\"2017-05-31 00:30:52\",\"cid\":2,\"addr_l1\":null,\"uid\":0,\"addr_l3\":null,\"imgs\":\"\",\"details\":\"helloegdf\",\"issell\":1,\"addr_l2\":null},{\"price\":\"\",\"phone\":\"18674813596\",\"id\":4,\"status\":0,\"views\":10,\"addr_l4\":null,\"pubtime\":\"2017-05-31 00:31:04\",\"cid\":4,\"addr_l1\":null,\"uid\":14,\"addr_l3\":null,\"imgs\":\"\",\"details\":\"helloeijgk,wijgkweg,weojg,,weogijwegw,weijgweg\",\"issell\":1,\"addr_l2\":null}]"}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+----------------------------------------------------------------------
+10、提交评论(支持盖楼)
+/apigateway/putcomment
+方法: POST
+输入:
+	{
+		"token":"", 			//用户登录凭证，必须登录才能发布评论
+		"goodid":"",			//产品ID
+		"content":"",			//评论内容
+		"tocomment":"",			//如果不是回复其他评论，则留空，否则填评论ID
+		"timestamp":""			//时间戳
+	}
+输出:
+	成功:
+		{"status":200,"msg":"","data":"发布成功"}
+	失败:
+		{"status":500,"msg":"更新商品评论失败, 很大可能是你回复的评论ID 不存在","data":""}
+		{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+	
+---------------------------------------------------------------------
+10.1 删除评论
+暂时不支持评论删除
+
+----------------------------------------------------------------------
+11、图片上传（包括产品图片，用户头像图片）
+/apigateway/upfile
+方法: POST
+支持: multipart/form-data
+	成功返回: {"status":200,"msg":"","data":"BD6B8A53C286D068DDA9B316EC9D6C32","extdata":"ded027f3b2c0c3445e447698c6871f1ff0951550845f673cd881b0678b88ffb5ef7a7a4da55ee3937de1127019b030c9"}
+
+测试上传接口,直接GET访问/apigateway/upfile, 按提示上传
+
+
+获得图片
+/gimg/ID/SIZE
+SIZE: 只可以取固定的值
+方法: GET
+	ID=文件上传成功后，返回的data内容
+	比如: /gimg/A8D5883AE4946D2C3AEA7E02B77CED30   显示原图
+		 /gimg/A8D5883AE4946D2C3AEA7E02B77CED30/20 等比例缩放宽度20
+		 
+删除图片
+/apigateway/dimg?id=ID
+方法: GET
+ID=文件上传成功后，返回的extdata内容
+
+比如:
+/apigateway/dimg?id=ded027f3b2c0c3445e447698c6871f1ff0951550845f673cd881b0678b88ffb5ef7a7a4da55ee3937de1127019b030c9
+
+成功返回:
+{"status":200,"msg":"","data":"success"}  --删除
+{"status":204,"msg":"","data":"success"}  --已经删除
+失败返回:
+{"status":500,"msg":"","data":"failed"}
+
+----------------------------------------------------------------------
+12、提交收藏
+/apigateway/putwish
+方法: POST
+输入:
+	{
+		"token":"", 			//用户登录凭证，必须登录状态
+		"goodid":"",			//产品ID
+		"timestamp":""			//时间戳
+	}
+输出:
+	成功:
+		{"status":200,"msg":"","data":"收藏成功"}
+	失败:
+		{"status":500,"msg":"更新用户收藏信息失败，极大可能您已经收藏了","data":""}
+		{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+---------------------------------------------------------------------
+
+12.1删除收藏
+/apigateway/delwish
+方法: POST
+输入:
+	{
+		"token":"", 			//用户登录凭证，必须登录状态
+		"goodid":"",			//产品ID
+		"timestamp":""			//时间戳
+	}
+输出:
+	成功:
+		{"status":200,"msg":"","data":"删除成功"}
+	失败:
+		{"status":500,"msg":"更新用户收藏信息失败，你压根就没收藏啊","data":""}
+		{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+
+----------------------------------------------------------------------
+13、获得收藏信息
+/apigateway/getwish
+方法: POST
+输入:
+	{
+		"token":"",			//登录凭证，当action="user" 时必须指定
+		"goodid":"",		//商品ID, 当action="good" 时必须指定
+		"action":"good",	//good 或者 user,指定为good时获得该商品的评论信息，指定为user时获得该用户的评论信息
+		"start":"",			//从第几条开始
+		"num":""			//获得几条,最多20条
+	}
+
+输出:
+	成功:
+		{"status":200,"msg":"","data":"[{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497781895.686,\"goodid\":5,\"uid\":14,\"nick_name\":\"yangping\"},{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"uid\":14,\"nick_name\":\"yangping\",\"create_time\":1497782309.608,\"goodid\":6},{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497782314.755,\"goodid\":7,\"uid\":14,\"nick_name\":\"yangping\"}]"}
+	失败:
+		{"status":500,"msg":"你压根没有收藏过, 或者根本没有这么多收藏信息","data":""}
+		{"status":500,"msg":"该商品压根没有被收藏过, 或者根本没有这么多收藏信息","data":""}
+		{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+
+-----------------------------------------------------------
+
+14、获得评论信息(支持盖楼)
+/apigateway/getcomment
+方法: POST
+输入:
+	{
+		"token":"",			//登录凭证，当action="user" 时必须指定
+		"goodid":"",		//商品ID, 当action="good" 时必须指定
+		"action":"good",	//good 或者 user,指定为good时获得该商品的评论信息，指定为user时获得该用户的评论信息
+		"start":"",			//从第几条开始
+		"num":""			//获得几条,最多20条
+	}
+输出:
+	成功:
+		{"status":200,"msg":"","data":"[{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497773174.714,\"like_num\":0,\"reply\":[{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497774711.473,\"like_num\":0,\"hate_num\":0,\"goodid\":3,\"comment_id\":60,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":44,\"nick_name\":\"yangping\"}],\"hate_num\":0,\"goodid\":3,\"comment_id\":44,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":45,\"nick_name\":\"yangping\"},{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497773383.057,\"like_num\":0,\"reply\":[{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497773599.173,\"like_num\":0,\"hate_num\":0,\"goodid\":3,\"comment_id\":55,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":53,\"nick_name\":\"yangping\"},{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497774571.715,\"like_num\":0,\"reply\":[{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497774634.063,\"like_num\":0,\"hate_num\":0,\"goodid\":3,\"comment_id\":58,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":57,\"nick_name\":\"yangping\"},{\"logo_url\":\"\\\/static\\\/img\\\/default.png\",\"create_time\":1497774635.252,\"like_num\":0,\"hate_num\":0,\"goodid\":3,\"comment_id\":59,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":57,\"nick_name\":\"yangping\"}],\"hate_num\":0,\"goodid\":3,\"comment_id\":57,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":53,\"nick_name\":\"yangping\"}],\"hate_num\":0,\"goodid\":3,\"comment_id\":53,\"content\":\"hello,test\",\"uid\":14,\"tocomment\":-1,\"nick_name\":\"yangping\"}]", extdata:13}
+	失败:
+		{"status":500,"msg":"你压根没有评论过, 或者根本没有这么多评论信息","data":""}
+		{"status":500,"msg":"该商品压根没有被评论过, 或者根本没有这么多评论信息","data":""}
+		{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+
+------------------------------------------------------------
+15、获得banner
+/apigateway/getbanner
+方法: GET
+输入:
+	?gname=groupname 目前groupname 可以取值:
+	index-top-middle/mobile-index-top-middle
+	例如:
+	/apigateway/getbanner?gname=index-top-middle
+	/apigateway/getbanner?gname=mobile-index-top-middle
+输出:
+	{"status":200,"msg":"","data":"[{\"target\":\"#\",\"name\":\"liftgoods\",\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/i_t_m1.jpg\"},{\"target\":\"#\",\"name\":\"Vehicles\",\"imgsrc\":\"http:\\\/\\\/www.kalichimall.com\\\/static\\\/img\\\/i_t_m2.jpg\"}]"}
+
+	
+---------------------------------------------------------------
+16、获得人工推荐的商品(首页顶部selling的信息)
+/apigateway/getbestgoods
+方法: GET
+输入:
+输出:
+	{"status":200,"msg":"","data":"{\"1\":{\"cid\":16,\"price\":\"888\",\"cimg\":\"BBCC76DA56511D1A456D26A643214E22\",\"id\":3},\"2\":{\"cid\":16,\"price\":\"999\",\"cimg\":\"DA30289A70E54D175F1950B62EC394AA\",\"id\":4},\"cimg\":\"\\\/gimg\\\/DA30289A70E54D175F1950B62EC394AA\",\"cname\":\"Clothes\"}"}
+	
+	
+-----------------------------------------------------------------
+17、检测指定商品是否被当前用户收藏
+/apigateway/checkwish
+方法: POST
+输入:
+	{
+		"token":"", 			//用户登录凭证
+		"goodid":"",			//产品ID
+		"timestamp":""			//时间戳
+	}
+正常输出: 
+	data字段返回"1" 表示已经收藏
+	{"status":200, "msg":"", "data":"0"}
+	{"status":200, "msg":"", "data":"1"}
+异常输出:
+	{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+
+
+---------------------------------------------------------------
+18、提交投诉
+/apigateway/subtipoff
+方法: POST
+输入: 
+	{
+		"token":"", 			//有token,传token,没有就不传了，当做匿名了
+		"goodid":"",			//产品ID
+		"content":"",			//投诉内容
+		"phonenumber":"",		//联系电话
+		"timestamp":""			//时间戳
+	}
+输出:
+	{"status":200,"msg":"","data":"success"}
+	{"status":500,"msg":"","data":"failed"}
+
+例子:
+'{"token":"", "goodid":"45", "content":"la ji la ji", "phonenumber":"13412342234"}'
+{"token":"26ad98eea323cbe97c573aa3027a4687", "goodid":"45", "content":"la ji la ji", "phonenumber":"13412342234"}
+
+-------------------------------------------------------
+19、获得当前用户的售卖信息
+/apigateway/getselling_ext
+方法:GET
+	/apigateway/getselling_ext?uid=&start=&n=
+输出:
+	{"status":200,"msg":"","data":"[{\"id\":4,\"uid\":14,\"cimg\":\"DA30289A70E54D175F1950B62EC394AA\",\"price\":999,\"goodstatus\":1,\"status\":0,\"views\":27,\"pubtime\":\"2017-05-31 00:31:04\",\"cid\":5,\"title\":\"title4_title4\",\"details\":\"helloeijgk,wijgkweg,weojg,,weogijwegw,weijgweg\",\"issell\":1},{\"id\":5,\"uid\":14,\"cimg\":\"\",\"price\":0,\"goodstatus\":1,\"status\":0,\"views\":20,\"pubtime\":\"2017-05-31 00:30:58\",\"cid\":6,\"title\":null,\"details\":\"''weg'\",\"issell\":1},{\"id\":6,\"uid\":14,\"cimg\":\"\",\"price\":0,\"goodstatus\":1,\"status\":0,\"views\":40,\"pubtime\":\"2017-05-31 00:31:08\",\"cid\":3,\"title\":\"title6_title6\",\"details\":\"hello,this is test\",\"issell\":1}]","extdata":"8"}
+异常输出:
+	{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+	
+---------------------------------------------------------------------
+20、获得当前用户收藏信息，该接口是getwish的扩展，依赖getwish接口
+/apigateway/getwish_ext
+方法:GET
+	/apigateway/getwish_ext?uid=&start=&n=&action=user/good
+	当action=user时，获得用户的收藏信息
+	当action=good时，获得该商品被哪些用户收藏 
+输出:
+	{"status":200,"msg":"","data":"[{\"id\":42,\"uid\":22,\"cimg\":\"\",\"price\":0,\"goodstatus\":1,\"status\":0,\"views\":21,\"pubtime\":\"2017-06-24 17:26:06\",\"cid\":1,\"title\":null,\"details\":\"Hahahhahahahha\",\"issell\":1},{\"id\":36,\"uid\":0,\"cimg\":\"\",\"price\":1,\"goodstatus\":1,\"status\":0,\"views\":112,\"pubtime\":\"2017-06-15 18:07:26\",\"cid\":1,\"title\":\"title\",\"details\":\"details\",\"issell\":1},{\"id\":34,\"uid\":0,\"cimg\":\"\",\"price\":1,\"goodstatus\":1,\"status\":0,\"views\":51,\"pubtime\":\"2017-06-15 18:05:27\",\"cid\":1,\"title\":\"title\",\"details\":\"details\",\"issell\":1},{\"id\":33,\"uid\":0,\"cimg\":\"\",\"price\":1,\"goodstatus\":1,\"status\":0,\"views\":43,\"pubtime\":\"2017-06-15 18:05:14\",\"cid\":1,\"title\":\"title\",\"details\":\"details\",\"issell\":1}]","extdata":4}
+异常输出:
+	{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+
+-----------------------------------------------------------------------
+21、获得商品发布者用户信息
+/apigateway/getuserinfo_pub?uid=&token=
+方法: GET
+说明:
+	uid是用户ID，该id你从商品信息里面取,token参数是可选的，token传当前登录用户的token，如果不传token，我返回的用户信息中phone字段只显示前面4个字节。只有传入有效的token我才会显示完整的phone
+	
+输出:
+	{"status":200,"msg":"","data":{"phone":"1867*****","id":14,"sex":0,"logo":"5D4F97F160A824A15B7B4E63F95AAEFD","reg":"2017-07-06 21:58:54","nickname":"yangping"}}
+	{"status":200,"msg":"","data":{"phone":"18674813596","id":14,"sex":0,"logo":"5D4F97F160A824A15B7B4E63F95AAEFD","reg":"2017-07-06 21:58:54","nickname":"yangping"}}
+	
+	{"status":500,"msg":"The user does not exist.","data":""}
+	
+---------------------------------
+22、密码修改
+/apigateway/changepass
+方法:POST
+输入:
+	{"token":"","data":"DATA","timestamp":1497091791}
+	DATA=RSA(oldpass=base64(oldpass)&newpass=base64(newpass))
+输出:
+	成功:
+		{"status":200,"msg":"","data":"success"}
+	失败:
+		{"status":500,"msg":"password error","data":""}
+		{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+		
+	将密码123456修改为654321
+	{"token":"cfa082eaf846a9296681e14e649ec476","data":"mtfxH+N4L+xuNiGYUeBmk5v/RGUd+jmFfRy1S5a1JpNajiHhmGCZOePxDS6xi9K3fpJ7gA0Wel3QIt8HNNj2wDH6gDqxr6rMuqscuQePYkI8dOduCm4aV7N/hjgRLDJv9mM/0Nda6Z0t/FF+Mdhx8yR/iyPyccQACSLTXicIBpE=","timestamp":1497091791}
+
+-------------------------------------------------------------------
+23、修改用户信息
+/apigateway/changeuserinfo
+方法:POST
+输入:
+	{"token":"cfa082eaf846a9296681e14e649ec476","sex":"0/1/2","logo":"","nickname":"newyangping"}
+	sex当为"0" 时 表示未设置性别
+	sex当为"1" 时 表示男 male
+	sex当为"2" 时 表示女 Female
+输出:
+	{"status":200,"msg":"","data":"success"}
+	{"status":500,"msg":"faild","data":""}
+	{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+	
+--------------------------------------------------------------------
+24、获得用户的发布信息
+/apigateway/getuserpubinfo
+方法:get
+
+输入:/apigateway/getuserpubinfo?token=&start=&n=&status=0/1/2
+	status=0表示在线，status=1表示下线，status=2表示完成
+输出:
+	{"status":200,"msg":"","data":"[]","extdata":0}
+	{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+	{"status":200,"msg":"","data":"[{\"wishs\":0,\"id\":5,\"uid\":14,\"cimg\":\"\",\"price\":0,\"goodstatus\":1,\"status\":0,\"views\":20,\"pubtime\":\"2017-05-31 00:30:58\",\"cid\":6,\"title\":null,\"details\":\"''weg'\",\"issell\":1},{\"wishs\":0,\"id\":6,\"uid\":14,\"cimg\":\"\",\"price\":0,\"goodstatus\":1,\"status\":0,\"views\":40,\"pubtime\":\"2017-05-31 00:31:08\",\"cid\":3,\"title\":\"title6_title6\",\"details\":\"hello,this is test\",\"issell\":1}]","extdata":"9"}
+
+
+--------------------------------------------------------------------
+25、更新发布状态
+/apigateway/updatepubstatus
+方法:get	
+输入:?token=&status=&goodid=
+status=/0/1/2
+status=0表示在线，status=1表示下线，status=2表示完成
+输出:
+	{"status":500,"msg":"faild","data":""}
+	{"status":501,"msg":"TOKEN_INVAID","data":"\/login"}
+	{"status":200,"msg":"success","data":""}
+
+--------------------------------------------------------------------
+26、更新发布的内容
+/apigateway/updatepubcontent
+方法:post
+输入:
+	{
+		"token":"", 			//用户登录凭证，如果是匿名发布则留空""
+		"id","",				//产品ID
+		"cid":"",				//产品分类ID
+		"issell":"",			//是否是出售，"1"为出售，"0"为需求
+		"goodstatus":"",		//产品新旧,"0","1","2","3","4","5"...
+		"price":"",				//价格
+		"title":"title",		//标题
+		"details":"details",	//产品详情
+		"addr_l1":"",			//一级地址 ID
+		"addr_l2":"",			//二级地址 ID
+		"addr_l3":"",			//三级地址 ID
+		"addr_l4":"",			//详细地址
+		"contactname":"name",	//联系人姓名
+		"phone":"phone",		//联系人手机
+		"imgs":""				//产品图片ID，图片ID通过图片上传接口获得,多个图片用逗号隔开
+	}
+输出:
+	成功:
+		{"status":200,"msg":""}
+	失败:
+		{"status":500,"msg":"error msg"}
+
+--------------------------------------------------------------------
+27、获得推荐logo
+/apigateway/getreclogos
+方法:get
+
+--------------------------------------------------------------------
+
+28、获得用户/商品 统计信息
+/apigateway/getcount
+方法:get
+
+--------------------------------------------------------------------
+
+29、获得跑马灯信息
+/apigateway/getmarquee
+方法:get
+
+----------------------------------------------
+
+30、获得最热的商品信息
+/apigateway/gethotgoods?n=N
+n=取得多少条 超过20 只给20
+方法:get
+
+	
+------------------------------------------------------------------
+
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5jmTSO5V9ILlphRYdfFk4M2Rk
+o/Ur22h43SxkFcGcj9Vkuew5P65XJPQtJesvY37UmU7zXWsqT/i4Evo2gaYu9Eu/
+fgutkP9KE4yKh4Ruk/pYC+hyNFVIK21kl4o8cfV9cKumydj2WXgmuywX8UQiVIfb
+KuvEAw+RVvPjBt9UqQIDAQAB
+-----END PUBLIC KEY-----

@@ -1,0 +1,78 @@
+/*headerBox*/
+.headerBox{
+    min-width: 1200px;
+    background-color: #F2F2F2;
+}
+.headerBox .header{
+    width:1200px;
+    height:25px;
+    line-height:25px;
+    margin:0 auto;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+.headerBox .header .headerLeft .lusaka{
+    padding-left:16px;
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: bold;
+}
+.headerBox .header .headerLeft .change{
+    text-decoration: underline;
+    cursor: pointer;
+    position: absolute;
+    padding-bottom: 20px;
+    height: 60px;
+    z-index: 9;
+}
+.headerBox .header .headerRight{
+    text-align: right;
+}
+.headerBox .header .headerRight .space{
+    padding-right: 8px;
+    padding-left:4px;
+    cursor: pointer;
+}
+.headerBox .header .headerRight .help{
+    color: #666;
+}
+.headerBox .header .headerRight .headImgBox{
+    cursor: pointer;
+}
+.headerBox .header .headerRight .headImg{
+    width: 15px;
+    vertical-align: -3px;
+}
+.headerBox .header .headerRight .logout{
+    color: #ff0000;
+    text-decoration: underline;
+}
+.headerBox .header .changeUl{
+    list-style: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top:30px;
+    padding:0;
+    background-color: #fff;
+    border: 1px solid #999;
+    z-index: 99;
+}
+.headerBox .header .changeUl .changeLi{
+    border-bottom: 1px solid #999;
+    width: 97px;
+    height: 26px;
+    line-height:26px;
+    font-size: 13px;
+    text-align: center;
+}
+.headerBox .header .changeUl .changeLi .changeLiLink{
+    color: #333333;
+}
+.headerBox .header .changeUl .changeLi .changeLiLink:hover{
+    color: #FF4720;
+}
+.headerBox .header .changeUl .changeLi:last-child{
+    border-bottom: 0;
+}

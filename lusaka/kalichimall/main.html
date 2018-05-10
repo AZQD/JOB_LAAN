@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalichimall</title>
+</head>
+<body>
+<script type="text/javascript">
+    function deviceType() {
+        for (var e = new Array("Android", "iPhone", "Windows Phone", "iPod", "BlackBerry", "MeeGo", "SymbianOS"), i = navigator.userAgent, n = e.length, s = 0; n > s; s++)
+            if (i.indexOf(e[s]) >= 0) return "isMobile";
+        return "isPC"
+    }
+//    alert(deviceType());
+    if(deviceType() == 'isMobile'){
+        window.location.href = 'mobile/index.html';
+    }else if(deviceType() == 'isPC'){
+        window.location.href = 'WEB/index.html';
+    }
+</script>
+</body>
+</html>

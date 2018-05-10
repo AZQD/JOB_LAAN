@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<checkURL>http://key.doswf.com/wi.php</checkURL>
+<updateURL>http://static.doswf.com/download/</updateURL>
+<adURL>http://static.doswf.com/files/ad.swf</adURL>
+</root>

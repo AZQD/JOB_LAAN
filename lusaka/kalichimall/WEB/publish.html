@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>publish</title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/headerBox.css">
+    <link rel="stylesheet" href="css/publish.css">
+</head>
+<body>
+<section class="commonPopBox" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="publishPopBox" style="display: none;">
+    <div class="tipOffBox">
+        <h3 class="title">To Publish</h3>
+        <p class="detailTip">You should login first to publish a messge.Do you need to login now?</p>
+        <div class="confirmBox">
+            <span class="confirmBtn loginNowBtn">Login Now</span><span class="confirmBtn laterBtn">Later</span>
+        </div>
+    </div>
+</section>
+<section class="container-fluid">
+
+    <aside class="headerBox">
+        <div class="row header">
+            <div class="col-xs-6 col-sm-6 headerLeft">
+                <span class="lusaka"><!--Lusaka--></span>&nbsp;
+                <span class="change">[Change]</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight1" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="space login">Sign in</span>|
+                <span class="space register">Sign up</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <div class="col-xs-6 col-sm-6 headerRight headerRight2" style="display: none;">
+                <span class="space home">Home</span>|
+                <span class="headImgBox"><img src="" class="headImg" style="display: none;"><span class="space name"></span>|</span>
+                <span class="space profile">My profile</span>|
+                <span class="space logout">logout</span>|
+                <a href="help.html" class="space help" target="_blank">Help</a>
+            </div>
+            <ul class="changeUl" style="display: none;">
+                <!--<li class="changeLi"><a href="#" class="changeLiLink">Lusaka1</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka2</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka3</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka4</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka5</a></li>
+                <li class="changeLi"><a href="#" class="changeLiLink">Lusaka6</a></li>-->
+            </ul>
+        </div>
+    </aside>
+
+    <aside class="searchBox row">
+        <div class="row search col-xs-12 col-sm-12">
+            <div class="col-xs-6 col-sm-6 searchLeft">
+                <img class="logo" src="image/index/logo.png">
+            </div>
+            <div class="col-xs-6 col-sm-6 searchRight">
+                <input class="ipt" type="text" placeholder="What dou you need?">
+                <img class="searchImg" src="image/index/search.png">
+                <button class="searchBtn">PUBLISH</button>
+                <marquee style="position: absolute;left: 50px;bottom: 6px;width: 507px;height: 20px;line-height: 20px;" id="aboutmarquee"></marquee>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="sortBox">
+        <div class="row sort">
+            <div class="col-xs-4 col-sm-4 part space active">
+                <span class="left" style="width: auto;">1. <span class="category categoryName">CATEGORY</span></span><span class="right changeCid" style="display: none;float: right;width: auto;">CHANGE</span>
+            </div>
+            <div class="col-xs-4 col-sm-4 part space">
+                2. DETAILS
+            </div>
+            <div class="col-xs-4 col-sm-4 part">
+                3. COMPLETE
+            </div>
+            <div class="row partInner partInner1" style="display: block;">
+                <div class="col-xs-2 col-sm-2 partInner1Left">
+                    <!--<div class="title active">Electronic</div>
+                    <div class="title">Living</div>-->
+                </div>
+                <div class="col-xs-10 col-sm-10 partInner1Right">
+                    <!--<div class="secondCidName">Computer1</div>
+                    <div class="secondCidName">Computer2</div>-->
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 partInner partInner2" style="display: none;">
+                <div class="row partInner2Box">
+                    <div class="col-xs-3 col-sm-3 left"></div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <a href="#" class="btn issell active">SELL</a><a href="#" class="btn issell">NEED</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 left"></div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <a href="#" class="btn goodstatus active">Brand New</a><a href="#" class="btn goodstatus">New</a><a href="#" class="btn goodstatus">As New</a><a href="#" class="btn goodstatus">A Half New</a>
+                    </div>
+                    <!--<div class="col-xs-12 col-sm-12" style="padding-left: 190px;padding-bottom: 20px;">
+                        <select name="selectCid" id="selectCid">
+                            &lt;!&ndash;<option value="1">1</option>&ndash;&gt;
+                        </select>
+                    </div>-->
+                    <div class="col-xs-3 col-sm-3 left">PRICE</div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <input type="text" class="priceText"><a href="###" class="btn negotiated">Negotiated</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 left">TITLE</div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <input type="text" class="titleText">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 left">ADD</div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <select class="location location1" id="location1">
+                            <!--<option value="LUSAKA">LUSAKA</option>-->
+                        </select>
+                        <select class="location location2" id="location2">
+                            <!--<option value="二级地理位置">二级地理位置</option>-->
+                            <!--<option value="北京">北京</option>-->
+                        </select>
+                        <!--<select class="location location3">
+                            <option value="三级地理位置">三级地理位置</option>
+                            <option value="西城">西城</option>
+                        </select>-->
+                        <input type="text" class="locationText">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 left">DETAILS</div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <!--<input type="text" class="detailText">-->
+                        <textarea class="detailText" name="detailText" id="detailText" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 left">IMAGES</div>
+                    <div class="col-xs-9 col-sm-9 right" style="margin-bottom: 0;">
+                        <div class="imagesBox">
+                            <!--<div class="nowHaveImg" style="background: url('image/index/headImg.png') no-repeat center center"></div>-->
+                            <!--<img style="width: 150px;height: 150px;position: relative;left: 0;" src="image/index/logo.png" alt="">-->
+                            <!--<img style="width: 150px;height: 150px;position: relative;left: 0;" src="image/index/logo.png" alt="">-->
+                            <!--<p class="upload">Upload Image</p>-->
+                            <!--<input type="file" id="upfile">-->
+                            <a href="javascript:;" class="a-upload a-upload1">
+                                <img src="" style="position: absolute;width: 100%;height: 100%;left: 0;display: none;background: #fff;" alt="" class="a-upload1Add">
+                                <input type="file" accept="image/png, image/jpeg" id="upfile1" name="file"><img class="uploadLogo uploadLogo1" src="image/publish/upload.png">
+                                <span class="showFileName showFileName1"></span>
+                                <img class="closeImg closeImg1" style="display: none;" src="image/publish/close.png"/>
+                            </a>
+                            <a href="javascript:;" class="a-upload a-upload2" style="display: none;">
+                                <img src="" style="position: absolute;width: 100%;height: 100%;left: 0;display: none;background: #fff;" alt="" class="a-upload2Add">
+                                <input type="file" accept="image/png, image/jpeg" id="upfile2" name="file"><img class="uploadLogo uploadLogo2" src="image/publish/upload.png">
+                                <span class="showFileName showFileName2"></span>
+                                <img class="closeImg closeImg2" style="display: none;" src="image/publish/close.png"/>
+                            </a>
+                            <a href="javascript:;" class="a-upload a-upload3" style="display: none;">
+                                <img src="" style="position: absolute;width: 100%;height: 100%;left: 0;display: none;background: #fff;" alt="" class="a-upload3Add">
+                                <input type="file" accept="image/png, image/jpeg" id="upfile3" name="file"><img class="uploadLogo uploadLogo3" src="image/publish/upload.png">
+                                <span class="showFileName showFileName3"></span>
+                                <img class="closeImg closeImg3" style="display: none;" src="image/publish/close.png"/>
+                            </a>
+                            <a href="javascript:;" class="a-upload a-upload4" style="display: none;">
+                                <img src="" style="position: absolute;width: 100%;height: 100%;left: 0;display: none;background: #fff;" alt="" class="a-upload4Add">
+                                <input type="file" accept="image/png, image/jpeg" id="upfile4" name="file"><img class="uploadLogo uploadLogo4" src="image/publish/upload.png">
+                                <span class="showFileName showFileName4"></span>
+                                <img class="closeImg closeImg4" style="display: none;" src="image/publish/close.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 left">CONTACT</div>
+                    <div class="col-xs-9 col-sm-9 right">
+                        <input type="text" class="contactText contactName" placeholder="Your Name"><input type="text" class="contactText contactPhone" placeholder="Your Cellphone Number">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 publishBtn"><a href="###" class="publishLink">PUBLISH</a></div>
+                </div>
+            </div>
+            <div class="row partInner partInner3" style="display: none;">
+                <div class="col-xs-12 col-sm-12 complete">
+                    <img class="completeImg" src="image/publish/complete.png">
+                </div>
+                <div class="col-xs-12 col-sm-12 published">
+                    Your message has published.
+                </div>
+                <div class="col-xs-12 col-sm-12 completeBtn"><a href="###" class="completeLink">Check this message</a></div>
+            </div>
+        </div>
+    </aside>
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<!--<script type="text/javascript" src="js/headerBox.js"></script>-->
+<!--<script type="text/javascript" src="js/searchBoxRight.js"></script>-->
+<script type="text/javascript" id="headerBoxFun"></script>
+<script type="text/javascript" id="searchBoxRightFun"></script>
+<script type="text/javascript" id="publishFun"></script>
+<script type="text/javascript">
+    $('#headerBoxFun').attr('src', 'js/headerBox.js?v='+mathRandomResult);
+    $('#searchBoxRightFun').attr('src', 'js/searchBoxRight.js?v='+mathRandomResult);
+    $('#publishFun').attr('src', 'js/publish.js?v='+mathRandomResult);
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="manageTitle"></title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/manage.css">
+    <!--<script type="text/javascript">
+        $('#manageHref').attr('href', 'css/manage.css?v='+mathRandomResult);
+    </script>-->
+</head>
+<body>
+
+<section class="commonPopBox1" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="commonPopBox2" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn confirmBtn1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="confirmBtn confirmBtn2"></span>
+        </div>
+    </div>
+</section>
+
+<section class="managePopBox" style="display: none;">
+    <div class="managePop">
+        <img src="image/backManage/close.png" alt="" class="closePopImg">
+        <div class="fileBtn">
+            <a href="javascript:;" class="upload a-upload a-upload4">Browser...
+                <input type="file" id="upfile4" accept="image/png, image/jpeg" name="file">
+                <span class="showFileName showFileName4"></span>
+            </a>
+        </div>
+        <p class="warning">Support PNG、JPG files.File size should less than 4M.</p>
+        <div class="imgBox">
+            <img class="headImgPic" src=""/>
+            <span class="loadingText" style="display: none;">loading...</span>
+        </div>
+        <div class="recommedTitle">Recommends</div>
+        <div class="recommendBox">
+            <!--<img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />
+            <img class="choose" src="image/recommend/1.jpg" />-->
+        </div>
+        <div class="save"><button class="saveBtn">Save</button></div>
+    </div>
+</section>
+
+
+<section class="container">
+    <aside class="row headerBox">
+        <div class="col-xs-4 col-sm-4 left"><img class="logo" src="image/index/logo.png"></div>
+        <div class="col-xs-4 col-sm-4 manageMiddle">My Profile</div>
+        <div class="col-xs-4 col-sm-4 right">
+            <img class="search" src="image/index/search.png">
+            <span class="logout" style="display: none;">Logout</span>
+        </div>
+    </aside>
+
+    <aside class="infoBox" style="margin-top: 2.5rem;">
+        <div class="info">
+            <div class="row infoWrap">
+                <div class="col-xs-12 col-sm-12 infoRight">
+                    <div class="part part1" style="display: block;">
+                        <div class="headBox">
+                            <img class="headImg" src="" style="display: none;">
+                            <!--<a class="editLink" href="#"></a>-->
+
+                            <!--<a href="javascript:;" class="a-upload a-upload4">Edit
+                                <input type="file" id="upfile4" accept="image/png, image/jpeg" name="file">
+                                <span class="showFileName showFileName4"></span>
+                            </a>-->
+                            <div class="goToEdit"><a href="###">Edit</a></div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr">Cellphone:&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="value"></span></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr">Nickname:&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" id="nickName" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox" style="width:270px;">
+                            <form action="#">
+                                <span class="attr">Gender:</span>
+                                <label><input type="radio" class="gender genderMale" name="gender">Male</label>
+                                <label><input type="radio" class="gender genderFemale" name="gender">Female</label>
+                            </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 attrBox attrBoxSave"><a href="javascript:void(0);" class="saveLink">SAVE CHANGES</a></div>
+
+                        <div class="col-xs-12 col-sm-12 passwordBox"><span class="password">PASSWORD</span></div>
+                        <div class="col-xs-12 col-sm-12 attrBox attrBox2"><span class="attr attr2">Current password:</span><input id="oldpass" type="text" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox attrBox3"><span class="forget">Forgot your password?</span></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr attr2">New password:</span><input id="newpass" type="text" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox"><span class="attr attr2">Verify  password:</span><input id="verifypass" type="text" class="nikeNameIpt"></div>
+                        <div class="col-xs-12 col-sm-12 attrBox attrBoxReset"><a href="###" class="resetLink">RESET PASSWARD</a></div>
+
+
+                        <!--新增登出-->
+                        <div class="row logoutBox" style="display: none;">
+                            <div class="col-xs-12 col-sm-12 logoutName"><span class="logoutText">logout</span></div>
+                            <div class="col-xs-12 col-sm-12 attrBox attrBoxReset"><a href="###" class="logoutLink">LOGOUT</a></div>
+                        </div>
+                    </div>
+                    <div class="row part part2" style="display: none;">
+                        <form action="#" class="form">
+                            <!--<label  style="visibility: hidden;" class="sell"><input name="sell" type="radio" checked value="" />&nbsp;&nbsp;ALL</label>-->
+                            <label class="sell"><input name="sell" type="radio" value="" style="display: none;" />&nbsp;&nbsp;Published</label>
+                            <label class="sell"><input name="sell" type="radio" value="" style="display: none;" />&nbsp;&nbsp;Finished</label>
+                            <label class="sell"><input name="sell" type="radio" value="" style="display: none;" />&nbsp;&nbsp;Offline</label>
+                            <!--<input id="search" name="search" type="text" value="" placeholder="Search..."/>-->
+                        </form>
+                        <div class="col-xs-12 col-sm-12 listTitle"><span class="gang">|</span><span><span id="searchName">ALL</span>(<span id="searchLength"></span>)</span></div>
+                        <ul class="row col-xs-12 col-sm-12 listUl">
+                            <!--<li class="row listLi">
+                                <div class="col-xs-2 col-sm-2 left"><img src="image/backManage/bigImg1.png"></div>
+                                <div class="col-xs-8 col-sm-8 middle">
+                                    <p class="title">Product title information</p>
+                                    <div class="count">
+                                        <img src="image/backManage/view.png">&nbsp;<span class="num view">20</span>
+                                        <img src="image/backManage/good.png">&nbsp;<span class="num good">20</span>
+                                        <img src="image/backManage/bad.png">&nbsp;<span class="num bad">20</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2 col-sm-2 right">
+                                    <img src="image/backManage/littleImg1.png"><br/>
+                                    <a href="#">OFFLINE</a>
+                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
+                    <div class="part part3" style="display: none;">
+                        <div id="disqus_thread"></div>
+                        <script>
+                            (function() { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://kalichimall.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                /*下面这行代码在opera mini不兼容*/
+//                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="row infos">
+        <div class="col-xs-4 col-sm-4 part tabs active"><span>My Profile</span></div>
+        <div class="col-xs-4 col-sm-4 part tabs"><span>Products</span></div>
+        <div class="col-xs-4 col-sm-4 part myHome"><span>My Home</span></div>
+    </aside>
+
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/drag.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/base64.js"></script>
+<script type="text/javascript" src="js/jsencrypt.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" id="manageFun"></script>
+<script type="text/javascript">
+    $('#manageFun').attr('src', 'js/manage.js?v='+mathRandomResult);
+</script>
+</body>
+</html>

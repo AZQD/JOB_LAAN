@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="categoryTitle"></title>
+    <meta name="keywords" content="kalichi,mall, kalichimall,vehicle,sedan,suv,digtal,cellphone,computer,watch,bulding,family,house,office,life goods,clothes,shoes,furniture,sell,buy,second,free">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="format-detection"content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <link class="favicon" href="" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstraptc.min.css">
+    <link rel="stylesheet" href="css/ppublic.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/category.css">
+
+    <!--<link rel="stylesheet" id="categoryHref">
+    <script type="text/javascript">
+        $('#categoryHref').attr('href', 'css/category.css?v='+mathRandomResult);
+    </script>-->
+</head>
+<body>
+<section id="dongHua"><img src="image/categoryDetail/loading.gif" alt=""></section>
+<section class="commonPopBox1" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn">OK</span>
+        </div>
+    </div>
+</section>
+<section class="commonPopBox2" style="display: none;">
+    <div class="commonPop">
+        <h3 class="title"></h3>
+        <p class="detailTip"></p>
+        <div class="confirmBox">
+            <span class="confirmBtn confirmBtn1"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="confirmBtn confirmBtn2"></span>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+
+    <aside class="row headerBox">
+        <div class="col-xs-4 col-sm-4 left"><img class="logo" src="image/index/logo.png"></div>
+        <div class="col-xs-4 col-sm-4 categoryMiddle">
+            <span class="categoryMiddleCidName"></span>
+        </div>
+        <div class="col-xs-4 col-sm-4 right">
+            <img class="search" src="image/index/search.png">
+            <span class="logout" style="display: none;">Logout</span>
+        </div>
+    </aside>
+
+    <aside class="toggleSortBox" style="margin-top: 2.5rem;">
+        <div class="row toggleSort">
+            <div class="tab col-xs-4 col-sm-4 pricesTab"><span class="text pricesText">Prices</span></div>
+            <div class="tab col-xs-4 col-sm-4 qualityTab"><span class="text qualityText">Quality</span></div>
+            <div class="tab col-xs-4 col-sm-4 areaTab"><span class="text areaText">Area</span></div>
+        </div>
+        <div class="row toggleList" style="">
+            <ul class="col-xs-4 col-sm-4 uls priceUl" style="display: none;">
+                <li class="" min="" max="">ALL</li>
+            </ul>
+            <ul class="col-xs-4 col-sm-4 uls qualityUl" style="display: none;">
+                <li class="" goodstatus="">ALL</li>
+                <li class="" goodstatus="0">Brand New</li>
+                <li class="" goodstatus="1">New</li>
+                <li class="" goodstatus="2">As New</li>
+                <li class="" goodstatus="3">A Half New</li>
+            </ul>
+            <ul class="col-xs-4 col-sm-4 uls areaUl" style="display: none;">
+                <li class="" areaid="">ALL</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!--<aside class="selectBox">
+        <div class="row select">
+            <div class="col-xs-12 col-sm-12 selectPrice">
+                <span class="price">PRICE</span>
+                <a href="#" class="selectChoose active">ALL</a>
+                &lt;!&ndash;<a href="#" class="selectChoose">0-100</a>
+                <a href="#" class="selectChoose">100-200</a>
+                <a href="#" class="selectChoose">200-500</a>
+                <a href="#" class="selectChoose">500++</a>&ndash;&gt;
+            </div>
+
+            <div class="col-xs-12 col-sm-12 selectQuality">
+                <span class="quality">QUALITY</span>
+                <a href="#" class="selectChoose active">ALL</a>
+                <a href="#" class="selectChoose">Brand New</a>
+                <a href="#" class="selectChoose">New</a>
+                <a href="#" class="selectChoose">As New</a>
+                <a href="#" class="selectChoose">A Half New</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 selectArea">
+                <span class="area">AREA</span>
+                <a href="#" class="selectChoose active">ALL</a>
+                &lt;!&ndash;<a href="#" class="selectChoose">Lusaka</a>
+                <a href="#" class="selectChoose">Others</a>&ndash;&gt;
+            </div>
+        </div>
+    </aside>-->
+
+    <aside class="tabsBox">
+        <div class="row tabs">
+            <div class="col-xs-4 col-sm-4 tabsLeft">
+                <a href="#" class="tabLink active">Seller</a>
+                <a href="#" class="tabLink">Buyer</a>
+            </div>
+            <div class="col-xs-8 col-sm-8 tabsRight">
+                <span class="t"><input type="checkbox" id="hasImage"> <label for="hasImage">Has image</label></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="tabBtn tabBtn1 tabBtn1Up"> Date</button><button class="tabBtn tabBtn2 tabBtn2Up"> Price</button>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="goodsBox">
+        <!--有需要打开第一个-->
+        <!--<div class="row goods">
+            <div class="col-xs-3 col-sm-3 goodsLeft">
+                <img src="image/categoryDetail/good1.jpg">
+                <span class="tip">3</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 goodsMiddle">
+                <p class="goodName">iPhone 6, OS is 10.3</p>
+                <p class="goodDesc">Product details</p>
+                <p class="goodDesc">Address Details <span class="goodDate">23/05/2017</span></p>
+            </div>
+            <div class="col-xs-3 col-sm-3 goodsRight">
+                <span class="goodsRight1">ZMW</span><span class="goodsRight2">1205</span>
+            </div>
+        </div>-->
+        <!--<div class="row goods">
+            <div class="col-xs-3 col-sm-3 goodsLeft">
+                <img src="image/categoryDetail/good1.jpg">
+                <span class="tip">3</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 goodsMiddle">
+                <p class="goodName">iPhone 6, OS is 10.3</p>
+                <p class="goodDesc">Product details</p>
+                <p class="goodDesc">Address Details <span class="goodDate">23/05/2017</span></p>
+            </div>
+            <div class="col-xs-3 col-sm-3 goodsRight">
+                <span class="goodsRight1">ZMW</span><span class="goodsRight2">1205</span>
+            </div>
+        </div>
+        <div class="row goods">
+            <div class="col-xs-3 col-sm-3 goodsLeft">
+                <img src="image/categoryDetail/good1.jpg">
+                <span class="tip">3</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 goodsMiddle">
+                <p class="goodName">iPhone 6, OS is 10.3</p>
+                <p class="goodDesc">Product details</p>
+                <p class="goodDesc">Address Details <span class="goodDate">23/05/2017</span></p>
+            </div>
+            <div class="col-xs-3 col-sm-3 goodsRight">
+                <span class="goodsRight1">ZMW</span><span class="goodsRight2">1205</span>
+            </div>
+        </div>
+        <div class="row goods">
+            <div class="col-xs-3 col-sm-3 goodsLeft">
+                <img src="image/categoryDetail/good1.jpg">
+                <span class="tip">3</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 goodsMiddle">
+                <p class="goodName">iPhone 6, OS is 10.3</p>
+                <p class="goodDesc">Product details</p>
+                <p class="goodDesc">Address Details <span class="goodDate">23/05/2017</span></p>
+            </div>
+            <div class="col-xs-3 col-sm-3 goodsRight">
+                <span class="goodsRight1">ZMW</span><span class="goodsRight2">1205</span>
+            </div>
+        </div>
+        <div class="row goods">
+            <div class="col-xs-3 col-sm-3 goodsLeft">
+                <img src="image/categoryDetail/good1.jpg">
+                <span class="tip">3</span>
+            </div>
+            <div class="col-xs-6 col-sm-6 goodsMiddle">
+                <p class="goodName">iPhone 6, OS is 10.3</p>
+                <p class="goodDesc">Product details</p>
+                <p class="goodDesc">Address Details <span class="goodDate">23/05/2017</span></p>
+            </div>
+            <div class="col-xs-3 col-sm-3 goodsRight">
+                <span class="goodsRight1">ZMW</span><span class="goodsRight2">1205</span>
+            </div>
+        </div>-->
+    </aside>
+    <aside class="pageControl" style="display: none;">
+        <button class="pageBtn lastPage">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="pageBtn nextPage">Next</button>
+    </aside>
+
+    <aside class="row infos">
+        <div class="col-xs-6 col-sm-6 part categoryPublish"><span>Publish</span></div>
+        <div class="col-xs-6 col-sm-6 part categorySignInUp" style="display: block;"><span>Sign in/Sign up</span></div>
+        <div class="col-xs-6 col-sm-6 part categoryProfile" style="display: none;"><span>My Home</span></div>
+    </aside>
+
+    <!--二级菜单-->
+    <!--<div class="classifyBoxWrap" style="display: none;">
+        <aside class="row classifyBox">
+            <div class="col-xs-12 col-sm-12 eachClass">
+                <span class="eachClassName" cid="" cidName="ALL">ALL</span>
+            </div>
+        </aside>
+    </div>-->
+
+    <div class="classifyBoxWrap" style="display: none;">
+        <aside class="row classifyBox">
+
+            <div class="classifyLi">
+                <div class="col-xs-3 col-sm-3 firstName" cid="" cidName="ALL">ALL</div>
+                <div class="col-xs-9 col-sm-9 secondNames" style="height: 2rem;">
+
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!--<aside class="row classifyBox">
+        &lt;!&ndash;<div class="classifyLi">
+            <div class="col-xs-4 col-sm-4 firstName">Electronic</div>
+            <div class="col-xs-8 col-sm-8 secondNames">
+                <span class="secondName">secondName</span>
+                <span class="secondName">secondName</span>
+                <span class="secondName">secondName</span>
+            </div>
+        </div>&ndash;&gt;
+    </aside>-->
+
+</section>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" id="categoryFun"></script>
+<script type="text/javascript">
+    $('#categoryFun').attr('src', 'js/category.js?v='+mathRandomResult);
+</script>
+</body>
+</html>
