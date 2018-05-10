@@ -51,5 +51,3 @@ http://www.kalichimall.com:81/mobile/index.html
 http://www.kalichimall.com/WEB/index.html
 
 http://www.kalichimall.com/mobile/index.html
-
-600+100+500+500+200+1000+1200+4000
